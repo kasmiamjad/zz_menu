@@ -195,7 +195,7 @@ function renderDishItem(dish, categoryName) {
     const hasImage = dish.image && dish.image.startsWith('http');
     
     return `
-        <div class="dish-item">
+        <div class="dish-item" onclick="openDishModal('${dish.name.replace(/'/g, "\\'")}', '${categoryName}', '${dish.price}', '${dish.description || ''}', '${dish.image}')">
             <div class="dish-image-container">
                 ${hasImage 
                     ? `<img src="${dish.image}" alt="${dish.name}" class="dish-image" onerror="this.parentElement.innerHTML='<div class=\\'dish-image-placeholder\\'>🍽️</div>'">` 
@@ -215,6 +215,43 @@ function renderDishItem(dish, categoryName) {
         </div>
     `;
 }
+
+function openDishModal(name, category, price, description, image) {
+    const modal = document.getElementById('dish-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalName = document.getElementById('modal-dish-name');
+    const modalPriceBadge = document.getElementById('modal-price-badge');
+    const modalDescription = document.getElementById('modal-dish-description');
+    const modalPrice = document.getElementById('modal-dish-price');
+    
+    modalName.textContent = name;
+    modalPriceBadge.textContent = `${category}`;
+    modalDescription.textContent = description || 'Delicious dish from our menu';
+    modalPrice.textContent = price || '-';
+    
+    if (image && image.startsWith('http')) {
+        modalImage.src = image;
+    } else {
+        modalImage.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop';
+    }
+    
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDishModal() {
+    const modal = document.getElementById('dish-modal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Modal event listeners
+document.getElementById('modal-close').addEventListener('click', closeDishModal);
+document.getElementById('dish-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeDishModal();
+    }
+});
 
 function setupSearch() {
     const searchInput = document.getElementById('search-input');
