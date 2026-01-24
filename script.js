@@ -1,6 +1,25 @@
 let menuData = null;
 let currentCategory = 'all';
 
+// Category icons mapping
+const categoryIcons = {
+    'all': '🍽️',
+    'main-dish': '🍖',
+    'salad': '🥗',
+    'soups-&-starters': '🍲',
+    'charcoal-barbeque': '🔥',
+    'mughlai-curries': '🍛',
+    'beef-nihari': '🥩',
+    'tawa-specialities': '🍳',
+    'vegetables-&-lentils': '🥬',
+    'rice': '🍚',
+    'tandoor': '🫓',
+    'dessert': '🍰',
+    'cold-beverages': '🥤',
+    'hot-beverages': '☕',
+    'close': '❌'
+};
+
 async function loadMenu() {
     try {
         const response = await fetch('menu-data.json');
@@ -33,11 +52,22 @@ async function loadMenu() {
 function buildTabs() {
     const tabsContainer = document.getElementById('category-tabs');
     
-    let tabsHTML = '<button class="tab active" data-category="all">All Items</button>';
+    let tabsHTML = `
+        <button class="tab active" data-category="all">
+            <div class="tab-icon">${categoryIcons['all']}</div>
+            <span>All Items</span>
+        </button>
+    `;
     
     menuData.categories.forEach(category => {
         const categorySlug = category.categoryName.toLowerCase().replace(/\s+/g, '-');
-        tabsHTML += `<button class="tab" data-category="${categorySlug}">${category.categoryName}</button>`;
+        const icon = categoryIcons[categorySlug] || '🍽️';
+        tabsHTML += `
+            <button class="tab" data-category="${categorySlug}">
+                <div class="tab-icon">${icon}</div>
+                <span>${category.categoryName}</span>
+            </button>
+        `;
     });
     
     tabsContainer.innerHTML = tabsHTML;
@@ -116,30 +146,11 @@ function displayMenu(categoryFilter = 'all', searchQuery = '') {
                     <h2 class="category-title">All Items</h2>
                     <span class="category-count">${allDishes.length} items</span>
                 </div>
-                <div class="dishes-grid">
+                <div class="dishes-list">
         `;
         
         allDishes.forEach(dish => {
-            const hasImage = dish.image && dish.image.startsWith('http');
-            
-            html += `
-                <div class="dish-card">
-                    <div class="dish-image-container">
-                        ${hasImage 
-                            ? `<img src="${dish.image}" alt="${dish.name}" class="dish-image" onerror="this.parentElement.innerHTML='<div class=\\'dish-image-placeholder\\'>🍽️</div>'">` 
-                            : '<div class="dish-image-placeholder">🍽️</div>'
-                        }
-                    </div>
-                    <div class="dish-content">
-                        <div class="dish-category">${dish.categoryName}</div>
-                        <h3 class="dish-name">${dish.name}</h3>
-                        ${dish.description ? `<p class="dish-description">${dish.description}</p>` : ''}
-                        <div class="dish-footer">
-                            ${dish.price ? `<div class="dish-price">${dish.price}</div>` : '<div class="dish-price">-</div>'}
-                        </div>
-                    </div>
-                </div>
-            `;
+            html += renderDishItem(dish, dish.categoryName);
         });
         
         html += `
@@ -164,29 +175,10 @@ function displayMenu(categoryFilter = 'all', searchQuery = '') {
                     </div>
                 `;
             } else {
-                html += '<div class="dishes-grid">';
+                html += '<div class="dishes-list">';
                 
                 category.dishes.forEach(dish => {
-                    const hasImage = dish.image && dish.image.startsWith('http');
-                    
-                    html += `
-                        <div class="dish-card">
-                            <div class="dish-image-container">
-                                ${hasImage 
-                                    ? `<img src="${dish.image}" alt="${dish.name}" class="dish-image" onerror="this.parentElement.innerHTML='<div class=\\'dish-image-placeholder\\'>🍽️</div>'">` 
-                                    : '<div class="dish-image-placeholder">🍽️</div>'
-                                }
-                            </div>
-                            <div class="dish-content">
-                                <div class="dish-category">${category.categoryName}</div>
-                                <h3 class="dish-name">${dish.name}</h3>
-                                ${dish.description ? `<p class="dish-description">${dish.description}</p>` : ''}
-                                <div class="dish-footer">
-                                    ${dish.price ? `<div class="dish-price">${dish.price}</div>` : '<div class="dish-price">-</div>'}
-                                </div>
-                            </div>
-                        </div>
-                    `;
+                    html += renderDishItem(dish, category.categoryName);
                 });
                 
                 html += '</div>';
@@ -197,6 +189,31 @@ function displayMenu(categoryFilter = 'all', searchQuery = '') {
     }
     
     menuContainer.innerHTML = html;
+}
+
+function renderDishItem(dish, categoryName) {
+    const hasImage = dish.image && dish.image.startsWith('http');
+    
+    return `
+        <div class="dish-item">
+            <div class="dish-image-container">
+                ${hasImage 
+                    ? `<img src="${dish.image}" alt="${dish.name}" class="dish-image" onerror="this.parentElement.innerHTML='<div class=\\'dish-image-placeholder\\'>🍽️</div>'">` 
+                    : '<div class="dish-image-placeholder">🍽️</div>'
+                }
+            </div>
+            <div class="dish-details">
+                <div class="dish-info">
+                    <div class="dish-category">${categoryName}</div>
+                    <h3 class="dish-name">${dish.name}</h3>
+                    ${dish.description ? `<p class="dish-description">${dish.description}</p>` : ''}
+                </div>
+                <div class="dish-footer">
+                    ${dish.price ? `<div class="dish-price">${dish.price}</div>` : '<div class="dish-price">-</div>'}
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 function setupSearch() {

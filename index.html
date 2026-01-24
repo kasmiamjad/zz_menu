@@ -8,21 +8,43 @@
 </head>
 <body>
     <div class="hero">
-        <div class="hero-content">
-            <h1 id="restaurant-name">Loading...</h1>
-            <p class="subtitle">Explore our delicious menu</p>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop" alt="Food" class="hero-image">
+        <button class="user-icon">👤</button>
+    </div>
+    
+    <div class="logo-section">
+        <div class="restaurant-logo">
+            <span id="restaurant-logo-text">Z&Z</span>
+        </div>
+    </div>
+    
+    <div class="restaurant-info">
+        <h1 id="restaurant-name">Loading...</h1>
+        <div class="social-icons">
+            <span>⭐</span>
+            <span>📍</span>
+            <span>📷</span>
+            <span>📞</span>
         </div>
     </div>
     
     <div class="container">
         <div class="tabs-container">
             <div class="tabs" id="category-tabs">
-                <button class="tab active" data-category="all">All Items</button>
+                <button class="tab active" data-category="all">
+                    <div class="tab-icon">🍽️</div>
+                    <span>All Items</span>
+                </button>
             </div>
         </div>
         
+        <div class="view-toggle">
+            <button class="toggle-btn active" data-view="list">☰</button>
+            <button class="toggle-btn" data-view="grid">▦</button>
+        </div>
+        
         <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search for dishes...">
+            <input type="text" id="search-input" placeholder="🔍 Search for dishes...">
         </div>
         
         <main id="menu-container">
