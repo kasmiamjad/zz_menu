@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 id="restaurant-name">Loading...</h1>
+            <p class="subtitle">Explore our delicious menu</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="tabs-container">
+            <div class="tabs" id="category-tabs">
+                <button class="tab active" data-category="all">All Items</button>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for dishes...">
+        </div>
+        
+        <main id="menu-container">
+            <div class="loading">Loading menu...</div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

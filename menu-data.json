@@ -1,0 +1,82 @@
+{
+  "restaurantName": "Z & Z Restaurant",
+  "categories": [
+    {
+      "categoryName": "Main Dish",
+      "dishes": []
+    },
+    {
+      "categoryName": "Salad",
+      "dishes": []
+    },
+    {
+      "categoryName": "Soups & Starters",
+      "dishes": []
+    },
+    {
+      "categoryName": "Charcoal Barbeque",
+      "dishes": []
+    },
+    {
+      "categoryName": "Mughlai Curries",
+      "dishes": [
+        {
+          "name": "Balti Gosht (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 65.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
+    },
+    {
+      "categoryName": "Beef Nihari",
+      "dishes": [
+        {
+          "name": "Nalli Nihari (Beef Boneless)",
+          "category": "Beef Nihari",
+          "price": "SAR 62.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
+    },
+    {
+      "categoryName": "Tawa Specialities",
+      "dishes": []
+    },
+    {
+      "categoryName": "Vegetables & Lentils",
+      "dishes": []
+    },
+    {
+      "categoryName": "Rice",
+      "dishes": []
+    },
+    {
+      "categoryName": "Tandoor",
+      "dishes": [
+        {
+          "name": "Basket of Breads",
+          "category": "Tandoor",
+          "price": "SAR 16.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
+    },
+    {
+      "categoryName": "Dessert",
+      "dishes": []
+    },
+    {
+      "categoryName": "Cold Beverages",
+      "dishes": []
+    },
+    {
+      "categoryName": "Hot Beverages",
+      "dishes": []
+    },
+    {
+      "categoryName": "Close",
+      "dishes": []
+    }
+  ]
+}
