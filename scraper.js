@@ -92,7 +92,7 @@ async function scrapeMenu() {
       }, categoryName);
       
       // Wait for items to load
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 3000));
       
       // Check if "No items found" message appears
       const hasNoItems = await page.evaluate(() => {
@@ -110,98 +110,159 @@ async function scrapeMenu() {
         continue;
       }
       
-      // Scroll to load all items in this category
+      // Scroll multiple times to load all items in this category
+      console.log(`  Scrolling to load all items...`);
+      
+      // First, try to find and scroll the main content container
       await page.evaluate(async () => {
-        await new Promise((resolve) => {
-          let totalHeight = 0;
-          const distance = 100;
-          const timer = setInterval(() => {
-            window.scrollBy(0, distance);
-            totalHeight += distance;
-            if (totalHeight >= document.body.scrollHeight) {
-              clearInterval(timer);
-              resolve();
-            }
-          }, 50);
+        // Find scrollable containers
+        const scrollableContainers = Array.from(document.querySelectorAll('*')).filter(el => {
+          return el.scrollHeight > el.clientHeight && 
+                 el.clientHeight > 100 && 
+                 getComputedStyle(el).overflow !== 'hidden';
         });
+        
+        console.log('Found scrollable containers:', scrollableContainers.length);
+        
+        // Scroll each container
+        for (const container of scrollableContainers) {
+          console.log('Scrolling container:', container.tagName, container.className);
+          for (let i = 0; i < 10; i++) {
+            container.scrollTop = container.scrollHeight;
+            await new Promise(resolve => setTimeout(resolve, 300));
+          }
+        }
+        
+        // Also scroll the window
+        for (let i = 0; i < 10; i++) {
+          window.scrollTo(0, document.body.scrollHeight);
+          await new Promise(resolve => setTimeout(resolve, 300));
+        }
       });
       
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Wait for any lazy-loaded content
+      await new Promise(resolve => setTimeout(resolve, 3000));
       
       // Extract dishes from this category
       const dishes = await page.evaluate(() => {
         const items = [];
         
-        // Look for dish cards - they have images and are in a grid/flex layout
-        const allDivs = document.querySelectorAll('div');
+        // The dishes are in a grid layout
+        // Each dish card is a direct child of the grid container
+        // Look for article tags or divs that are direct children of a grid/flex container
         
-        allDivs.forEach(card => {
-          // Must have an image to be a dish card
-          const img = card.querySelector('img');
-          if (!img) return;
-          
-          // Get direct text content (not from children)
-          const textContent = card.innerText || '';
-          if (!textContent) return;
-          
-          // Split into lines
-          const lines = textContent.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-          if (lines.length < 2) return;
-          
-          let dishName = '';
-          let categoryLabel = '';
-          let price = '';
-          
-          // Based on debug output, the structure is:
-          // Line 0: Dish name (e.g., "Nalli Nihari (Beef Boneless)")
-          // Line 1: Category (e.g., "Beef Nihari")
-          // Line 2: Price number (e.g., "62.00")
-          // Line 3: Price unit (e.g., "/ 1")
-          
-          if (lines.length >= 4) {
-            dishName = lines[0];
-            categoryLabel = lines[1];
-            // Combine price lines - add SAR symbol
-            price = `SAR ${lines[2]} ${lines[3]}`;
-          } else if (lines.length === 3) {
-            dishName = lines[0];
-            categoryLabel = lines[1];
-            price = lines[2];
-          } else if (lines.length === 2) {
-            dishName = lines[0];
-            categoryLabel = lines[1];
-          } else {
-            dishName = lines[0];
-          }
-          
-          const image = img.src || '';
-          
-          // Validate: dish name should be meaningful
-          if (dishName && 
-              dishName.length > 3 && 
-              dishName !== 'Options' && 
-              !dishName.includes('Language') &&
-              !dishName.includes('No items found')) {
-            items.push({ 
-              name: dishName, 
-              category: categoryLabel, 
-              price, 
-              image 
-            });
-          }
-        });
+        // Try to find dish cards by looking for elements with specific structure
+        const potentialCards = document.querySelectorAll('article, div[class*="card"], div[class*="item"], div[class*="product"]');
         
-        // Remove duplicates based on name
-        const uniqueItems = [];
+        console.log('Potential cards found:', potentialCards.length);
+        
+        if (potentialCards.length === 0) {
+          // Fallback: look for any div with an image and text
+          const allElements = document.querySelectorAll('*');
+          
+          allElements.forEach(el => {
+            // Check if this element has an image as direct child
+            const directImg = Array.from(el.children).find(child => child.tagName === 'IMG');
+            if (!directImg) return;
+            
+            // Get text from this element only (not nested)
+            const text = el.innerText || '';
+            const lines = text.split('\n').map(l => l.trim()).filter(l => l && l.length > 0);
+            
+            if (lines.length < 2) return;
+            
+            // Check if this looks like a dish card (has name, category, price pattern)
+            const hasPrice = lines.some(line => line.match(/\d+\.?\d*\s*\/\s*\d+/) || line.match(/^\d+\.?\d+$/));
+            
+            if (!hasPrice) return;
+            
+            let dishName = lines[0];
+            let categoryLabel = lines[1];
+            let price = '';
+            
+            // Find price in lines
+            for (let i = 0; i < lines.length; i++) {
+              if (lines[i].match(/\d/) && (lines[i].includes('/') || i === lines.length - 1)) {
+                if (i > 0 && lines[i - 1].match(/^\d+\.?\d+$/)) {
+                  price = `SAR ${lines[i - 1]} ${lines[i]}`;
+                } else {
+                  price = lines[i];
+                }
+                break;
+              }
+            }
+            
+            const image = directImg.src || '';
+            
+            // Validate
+            if (dishName && 
+                dishName.length > 2 && 
+                !dishName.includes('Z & Z') &&
+                !dishName.includes('Search') &&
+                !dishName.includes('Language')) {
+              
+              items.push({ 
+                name: dishName, 
+                category: categoryLabel, 
+                price, 
+                image 
+              });
+            }
+          });
+        } else {
+          // Use the found cards
+          potentialCards.forEach(card => {
+            const img = card.querySelector('img');
+            if (!img) return;
+            
+            const text = card.innerText || '';
+            const lines = text.split('\n').map(l => l.trim()).filter(l => l && l.length > 0);
+            
+            if (lines.length < 2) return;
+            
+            let dishName = lines[0];
+            let categoryLabel = lines[1];
+            let price = '';
+            
+            // Parse price
+            if (lines.length >= 4 && lines[2].match(/^\d+\.?\d+$/)) {
+              price = `SAR ${lines[2]} ${lines[3]}`;
+            } else if (lines.length >= 3) {
+              price = lines[2];
+            }
+            
+            const image = img.src || '';
+            
+            if (dishName && dishName.length > 2) {
+              items.push({ 
+                name: dishName, 
+                category: categoryLabel, 
+                price, 
+                image 
+              });
+            }
+          });
+        }
+        
+        console.log('Items before dedup:', items.length);
+        
+        // Remove duplicates
+        const unique = [];
         const seen = new Set();
         items.forEach(item => {
-          if (!seen.has(item.name)) {
-            seen.add(item.name);
-            uniqueItems.push(item);
+          const key = item.name.toLowerCase();
+          if (!seen.has(key)) {
+            seen.add(key);
+            unique.push(item);
+            if (unique.length <= 3) {
+              console.log(`  - ${item.name}: ${item.price}`);
+            }
           }
         });
         
-        return uniqueItems;
+        console.log('Items after dedup:', unique.length);
+        
+        return unique;
       });
       
       console.log(`  Found ${dishes.length} dishes in ${categoryName}`);

@@ -7,21 +7,420 @@
     },
     {
       "categoryName": "Salad",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Yogurt Raita",
+          "category": "Salad",
+          "price": "SAR 8.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Fresh Garden Salad",
+          "category": "Salad",
+          "price": "SAR 16.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Yogurt Salad",
+          "category": "Salad",
+          "price": "SAR 16.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kachumber Salad",
+          "category": "Salad",
+          "price": "SAR 18.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Hummus With Bread",
+          "category": "Salad",
+          "price": "SAR 18.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Tabbouleh",
+          "category": "Salad",
+          "price": "SAR 18.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Lava Pappri Chaat",
+          "category": "Salad",
+          "price": "SAR 22.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Desi Papri Crunch Salad",
+          "category": "Salad",
+          "price": "SAR 22.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chicken Apple Salad",
+          "category": "Salad",
+          "price": "SAR 24.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Fattoush Salad",
+          "category": "Salad",
+          "price": "SAR 25.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Cesar Tikka Salad",
+          "category": "Salad",
+          "price": "SAR 28.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Beef Vegetables Salad",
+          "category": "Salad",
+          "price": "SAR 32.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Soups & Starters",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Murgh Yakhani (Non-Veg)",
+          "category": "Soups & Starters",
+          "price": "SAR 18.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Daal Shorba (Vegetarian)",
+          "category": "Soups & Starters",
+          "price": "SAR 18.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Eight Treasure Soup",
+          "category": "Soups & Starters",
+          "price": "SAR 22.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Cream of Mushroom Soup",
+          "category": "Soups & Starters",
+          "price": "SAR 22.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Seafood Thermidor Soup",
+          "category": "Soups & Starters",
+          "price": "SAR 32.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "French Fries",
+          "category": "Soups & Starters",
+          "price": "SAR 14.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chicken Nuggets",
+          "category": "Soups & Starters",
+          "price": "SAR 20.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Crispy Chicken Wings",
+          "category": "Soups & Starters",
+          "price": "SAR 22.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Finger Fish (8 Pcs)",
+          "category": "Soups & Starters",
+          "price": "SAR 32.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Crispy Fried Fish Finger With Fries (8 Pcs)",
+          "category": "Soups & Starters",
+          "price": "SAR 35.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Golden Crispy Fried Prawns (6 Pcs)",
+          "category": "Soups & Starters",
+          "price": "SAR 36.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Dynamite Prawns",
+          "category": "Soups & Starters",
+          "price": "SAR 38.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Penne Arrabbiata Pasta",
+          "category": "Soups & Starters",
+          "price": "SAR 30.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Oven Baked Pasta",
+          "category": "Soups & Starters",
+          "price": "SAR 35.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Fettuccine Alfredo Pasta",
+          "category": "Soups & Starters",
+          "price": "SAR 38.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Charcoal Barbeque",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Kalmi Tikka (Chicken Drum Stick)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 44.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chatkhara Boti (Chicken Bone-in)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 46.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chicken Tikka (Chicken Bone-in)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 46.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Bohpali Boti (Chicken Bone-in)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 46.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Mughlai Malai Tikka (Chicken Bone-in)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 46.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Makhmali Seekh Kebab (Chicken Minced)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 46.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Mughlai Malai Boti (Chicken Boneless Cubes)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 48.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Haryali Boti (Chicken Boneless Cubes)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 48.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chandan Seekh Kebab (Chicken Minced)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 50.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Anarkali Boti (Chicken Boneless Cubes)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Shahjahani Boti (Chicken Boneless Cubes)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Angara Boti (Chicken Bone-in)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Shahi Seekh Kebab (Mutton Minced)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kasturi Kebab (Chicken Boneless Cubes)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Hunzai Kebab (Mutton Minced)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Karachi Behari Boti (Beef Boneless)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Tandoori Lalazar-Quail (Seasonal)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Namkeen Champ (Lamb Bone-in)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Sonehri Champ (Lamb Bone-in)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 58.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Sonehri Jheenga-Prawn (Seasonal)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 60.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Mughlai Curries",
       "dishes": [
         {
+          "name": "Z & Z Special Nihari",
+          "category": "Mughlai Curries",
+          "price": "SAR 71.30 / حبة",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Ranay Murgh Handi (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Murgh Achar Wala (Boneless Cubes)",
+          "category": "Mughlai Curries",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chicken Hara Masala Handi (Boneless Cubes)",
+          "category": "Mughlai Curries",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Murgh Makhani – Butter Chicken (Boneless Cubes)",
+          "category": "Mughlai Curries",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Shikarpuri Chicken Karahi (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chicken Tikka Masala (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Atishi Murgh Masala (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Punjabi Palak Gosht (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Murgh Naulakha (Boneless Long Strips)",
+          "category": "Mughlai Curries",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chicken Rezala Curry (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Hyderabadi Nizami Dum ka Murgh (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chicken Changazi Curry (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 56.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Darbari Murgh Handi (Boneless Cubes)",
+          "category": "Mughlai Curries",
+          "price": "SAR 58.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Madrasi Chicken Handi (Boneless Cubes)",
+          "category": "Mughlai Curries",
+          "price": "SAR 58.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Rajasthani Chicken Handi (Boneless Cubes)",
+          "category": "Mughlai Curries",
+          "price": "SAR 58.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Peshawari Gosht (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 62.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Mutton Karahi (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 62.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
           "name": "Balti Gosht (Bone-in)",
+          "category": "Mughlai Curries",
+          "price": "SAR 65.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Shahi Mutton White Karahi (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 65.00 / 1",
           "image": "https://hub.saaed.app/img/default.png"
@@ -32,28 +431,235 @@
       "categoryName": "Beef Nihari",
       "dishes": [
         {
+          "name": "Tarka Nihari (Beef Boneless)",
+          "category": "Beef Nihari",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Maghaz Nihari (Beef Boneless)",
+          "category": "Beef Nihari",
+          "price": "SAR 58.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
           "name": "Nalli Nihari (Beef Boneless)",
           "category": "Beef Nihari",
           "price": "SAR 62.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Z n Z Special Nihari (Beef Boneless)",
+          "category": "Beef Nihari",
+          "price": "SAR 65.00 / 1",
           "image": "https://hub.saaed.app/img/default.png"
         }
       ]
     },
     {
       "categoryName": "Tawa Specialities",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Chicken Taka Tak (Boneless Small Pieces)",
+          "category": "Tawa Specialities",
+          "price": "SAR 48.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kebab Masala (Mutton Minced)",
+          "category": "Tawa Specialities",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Tawa Qeema (Mutton Minced)",
+          "category": "Tawa Specialities",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Maghaz Masala (Mutton Brain)",
+          "category": "Tawa Specialities",
+          "price": "SAR 58.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Champ Masala (Mutton Bone in)",
+          "category": "Tawa Specialities",
+          "price": "SAR 60.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Batair Masala-Quail (Seasonal)",
+          "category": "Tawa Specialities",
+          "price": "SAR 60.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Machalti Hoi Fish",
+          "category": "Tawa Specialities",
+          "price": "SAR 68.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Vegetables & Lentils",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Lahori Channa",
+          "category": "Vegetables & Lentils",
+          "price": "SAR 32.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Rasmisay Rajma",
+          "category": "Vegetables & Lentils",
+          "price": "SAR 32.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Mughlai Bhujia (Mixed Vegetables)",
+          "category": "Vegetables & Lentils",
+          "price": "SAR 34.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Dal Makhani",
+          "category": "Vegetables & Lentils",
+          "price": "SAR 36.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Palak Paneer",
+          "category": "Vegetables & Lentils",
+          "price": "SAR 38.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Qasar-E-Pukhtan",
+          "category": "Vegetables & Lentils",
+          "price": "SAR 40.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Shahi Mutter Paneer Curry",
+          "category": "Vegetables & Lentils",
+          "price": "SAR 42.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Rice",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Buttered Steamed Rice",
+          "category": "Rice",
+          "price": "SAR 18.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Nauratan Biryani (Mixed Vegetables)",
+          "category": "Rice",
+          "price": "SAR 38.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Karachi Special Biryani (Chicken Bone-in)",
+          "category": "Rice",
+          "price": "SAR 48.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Satrangi Biryani (Chicken Boneless)",
+          "category": "Rice",
+          "price": "SAR 52.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Butter Chicken Biryani (Chicken Boneless Cubes)",
+          "category": "Rice",
+          "price": "SAR 55.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kujja Mutton Dum Biryani (Mutton Bone-in)",
+          "category": "Rice",
+          "price": "SAR 62.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Chilman Biryani (Mutton Boneless)",
+          "category": "Rice",
+          "price": "SAR 64.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Zaoq-e-Nawab Fish Biryani",
+          "category": "Rice",
+          "price": "SAR 65.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Emperor's Prawn Biryani",
+          "category": "Rice",
+          "price": "SAR 68.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Tandoor",
       "dishes": [
+        {
+          "name": "Tandoori Roti",
+          "category": "Tandoor",
+          "price": "SAR 2.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Khameeri Roti",
+          "category": "Tandoor",
+          "price": "SAR 3.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Plain Naan",
+          "category": "Tandoor",
+          "price": "SAR 5.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Roghni Naan",
+          "category": "Tandoor",
+          "price": "SAR 6.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kalonji Naan",
+          "category": "Tandoor",
+          "price": "SAR 6.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Garlic Naan",
+          "category": "Tandoor",
+          "price": "SAR 6.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Tandoori Paratha",
+          "category": "Tandoor",
+          "price": "SAR 8.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Cheese Naan",
+          "category": "Tandoor",
+          "price": "SAR 12.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
         {
           "name": "Basket of Breads",
           "category": "Tandoor",
@@ -64,19 +670,185 @@
     },
     {
       "categoryName": "Dessert",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Gulab Jamun",
+          "category": "Dessert",
+          "price": "SAR 14.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kheer",
+          "category": "Dessert",
+          "price": "SAR 16.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Rasmalai",
+          "category": "Dessert",
+          "price": "SAR 18.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Lab-E-Shireen",
+          "category": "Dessert",
+          "price": "SAR 20.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Delicious Pakistani Falooda",
+          "category": "Dessert",
+          "price": "SAR 20.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Pistachio Rabri",
+          "category": "Dessert",
+          "price": "SAR 22.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Gajar Halwa (Seasonal)",
+          "category": "Dessert",
+          "price": "SAR 24.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Cold Beverages",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Drinking Water (Small)",
+          "category": "Cold Beverages",
+          "price": "SAR 3.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Drinking Water (Large)",
+          "category": "Cold Beverages",
+          "price": "SAR 5.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Soft Drinks (Regular & Diet)",
+          "category": "Cold Beverages",
+          "price": "SAR 5.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Spring Mineral Water",
+          "category": "Cold Beverages",
+          "price": "SAR 8.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Sparkling Water",
+          "category": "Cold Beverages",
+          "price": "SAR 12.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Fresh Lime",
+          "category": "Cold Beverages",
+          "price": "SAR 10.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Lassi (Sweet & Salty)",
+          "category": "Cold Beverages",
+          "price": "SAR 12.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Ice Tea (Assorted Flavors)",
+          "category": "Cold Beverages",
+          "price": "SAR 14.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Mint Lassi",
+          "category": "Cold Beverages",
+          "price": "SAR 14.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Mint Margarita",
+          "category": "Cold Beverages",
+          "price": "SAR 15.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Mango Lassi",
+          "category": "Cold Beverages",
+          "price": "SAR 16.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Virgin Mojitos (Assorted Flavors)",
+          "category": "Cold Beverages",
+          "price": "SAR 16.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Hot Beverages",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Sulaimani Tea",
+          "category": "Hot Beverages",
+          "price": "SAR 6.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Green Tea",
+          "category": "Hot Beverages",
+          "price": "SAR 6.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Karak Chai",
+          "category": "Hot Beverages",
+          "price": "SAR 8.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kashmiri Tea (Seasonal)",
+          "category": "Hot Beverages",
+          "price": "SAR 15.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Close",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Sulaimani Tea",
+          "category": "Hot Beverages",
+          "price": "SAR 6.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Green Tea",
+          "category": "Hot Beverages",
+          "price": "SAR 6.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Karak Chai",
+          "category": "Hot Beverages",
+          "price": "SAR 8.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Kashmiri Tea (Seasonal)",
+          "category": "Hot Beverages",
+          "price": "SAR 15.00 / 1",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     }
   ]
 }
