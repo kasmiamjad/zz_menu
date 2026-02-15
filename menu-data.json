@@ -12,72 +12,84 @@
           "name": "Yogurt Raita",
           "category": "Salad",
           "price": "SAR 8.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771080458_1-yogurt-raita.jpg"
         },
         {
           "name": "Fresh Garden Salad",
           "category": "Salad",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771077230_2-fresh-garden-salad.jpg"
         },
         {
           "name": "Yogurt Salad",
           "category": "Salad",
           "price": "SAR 16.00 / 1",
+          "description": "Plain yogurt with a slight touch of cumin seeds & salt",
           "image": "https://hub.saaed.app/uploads/img/1771080419_3-yogurt-salad.jpg"
         },
         {
           "name": "Kachumber Salad",
           "category": "Salad",
           "price": "SAR 18.00 / 1",
+          "description": "A healthy combination of vegetables along with lemon wedge",
           "image": "https://hub.saaed.app/uploads/img/1771078289_4-kachumer-salad.jpg"
         },
         {
           "name": "Hummus With Bread",
           "category": "Salad",
           "price": "SAR 18.00 / 1",
+          "description": "Homemade yogurt with a slight touch of cumin seeds",
           "image": "https://hub.saaed.app/uploads/img/1771077950_5-hummus-with-bread.jpg"
         },
         {
           "name": "Tabbouleh",
           "category": "Salad",
           "price": "SAR 18.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771080879_6-tabbouleh.jpg"
+          "description": "Our famous fresh salad drizzled with cucumbers, carrots & onion with lemon juice & pepper",
+          "image": "https://hub.saaed.app/uploads/img/1771132005_6-tabbouleh.jpg"
         },
         {
           "name": "Lava Pappri Chaat",
           "category": "Salad",
           "price": "SAR 22.00 / 1",
+          "description": "Traditional Arabic starter combinations of chickpeas, tahina, garlic, lemon juice & olive oil",
           "image": "https://hub.saaed.app/uploads/img/1771078911_7-lava-papri-chaat.jpg"
         },
         {
           "name": "Desi Papri Crunch Salad",
           "category": "Salad",
           "price": "SAR 22.00 / 1",
+          "description": "Parsley, fresh lemon juice, bulgur wheat, olive oil",
           "image": "https://hub.saaed.app/uploads/img/1771076740_8-desi-papdri-crunch-salad.jpg"
         },
         {
           "name": "Chicken Apple Salad",
           "category": "Salad",
           "price": "SAR 24.00 / 1",
+          "description": "Combination of crunchy, tangy, sweet and spicy flavors.",
           "image": "https://hub.saaed.app/uploads/img/1771075639_9-chicken-apple-salad.jpg"
         },
         {
           "name": "Fattoush Salad",
           "category": "Salad",
           "price": "SAR 25.00 / 1",
+          "description": "Classic chopped kachumar cucumber,onion,tomato with crispy fried dough wafers called pappri",
           "image": "https://hub.saaed.app/uploads/img/1771076973_10-fatosh.jpg"
         },
         {
           "name": "Caesar Tikka Salad",
           "category": "Salad",
           "price": "SAR 28.00 / 1",
+          "description": "Marinated chicken with apple mayonnaise and herbs",
           "image": "https://hub.saaed.app/uploads/img/1771075030_11-caesar-tikka-salad.jpg"
         },
         {
           "name": "Beef Vegetables Salad",
           "category": "Salad",
           "price": "SAR 32.00 / 1",
+          "description": "Olive oil, fresh lemon juice, garlic, sumac, and pomegranate molasses",
           "image": "https://hub.saaed.app/uploads/img/1771064519_12-beef-vegetables-salad.jpg"
         }
       ]
@@ -89,90 +101,105 @@
           "name": "Murgh Yakhani (Non-Veg)",
           "category": "Soups & Starters",
           "price": "SAR 18.00 / 1",
+          "description": "Marinated grilled chicken ice berg and Cesar dressing with garlic bread",
           "image": "https://hub.saaed.app/uploads/img/1771082165_13-murgh-yakhani-non-veg.jpg"
         },
         {
           "name": "Daal Shorba (Vegetarian)",
           "category": "Soups & Starters",
           "price": "SAR 18.00 / 1",
+          "description": "Tender line slice of beef served over a fresh mix of crisp vegetables",
           "image": "https://hub.saaed.app/uploads/img/1771076486_14-daal-shorba-veg.jpg"
         },
         {
           "name": "Eight Treasure Soup",
           "category": "Soups & Starters",
           "price": "SAR 22.00 / 1",
+          "description": "Clear chicken broth soup perfect for the weight watchers",
           "image": "https://hub.saaed.app/uploads/img/1771076822_15-eight-treasure-soup.jpg"
         },
         {
           "name": "Cream of Mushroom Soup",
           "category": "Soups & Starters",
           "price": "SAR 22.00 / 1",
+          "description": "Mixture of thick masoor lentil, corn flour, butter, lemon juice, black pepper & salt",
           "image": "https://hub.saaed.app/uploads/img/1771076383_16-cream-of-mushroom-soup.jpg"
         },
         {
           "name": "Seafood Thermidor Soup",
           "category": "Soups & Starters",
           "price": "SAR 32.00 / 1",
+          "description": "Chicken served with fresh vegetable thick with corn flour, egg and sauces",
           "image": "https://hub.saaed.app/uploads/img/1771083247_17-seafood-thermidor-soup.jpg"
         },
         {
           "name": "French Fries",
           "category": "Soups & Starters",
           "price": "SAR 14.00 / 1",
+          "description": "Cream of mushroom soup made from scratch with freshly sliced mushrooms, onion, garlic, stock, cream",
           "image": "https://hub.saaed.app/uploads/img/1771077185_18-french-fries.jpg"
         },
         {
           "name": "Chicken Nuggets",
           "category": "Soups & Starters",
           "price": "SAR 20.00 / 1",
+          "description": "Creamy, cheesy preparation served with chunks of seafood (Prawns & Fish)",
           "image": "https://hub.saaed.app/uploads/img/1771075747_19-chicken-nuggets.jpg"
         },
         {
           "name": "Crispy Chicken Wings",
           "category": "Soups & Starters",
           "price": "SAR 22.00 / 1",
+          "description": "Plain potato fries with ketchup, all time kid's favorite",
           "image": "https://hub.saaed.app/uploads/img/1771076412_20-crispy-chicken-wings.jpg"
         },
         {
           "name": "Finger Fish (8 Pcs)",
           "category": "Soups & Starters",
           "price": "SAR 32.00 / 1",
+          "description": "Deep fried breaded chicken nuggets served with French Fries",
           "image": "https://hub.saaed.app/uploads/img/1771077104_21-finger-fish-8-pcs.jpg"
         },
         {
           "name": "Crispy Fried Fish Finger With Fries (8 Pcs)",
           "category": "Soups & Starters",
           "price": "SAR 35.00 / 1",
+          "description": "Deep fried marinated chicken wings served with tomato ketchup",
           "image": "https://hub.saaed.app/uploads/img/1771076446_22-crispy-fried-fish-finger.jpg"
         },
         {
           "name": "Golden Crispy Fried Prawns (6 Pcs)",
           "category": "Soups & Starters",
           "price": "SAR 36.00 / 1",
+          "description": "Crispy, spiced fish fingers inspired by Lahori flavors, served in a perfect bite-sized portion (8 pcs).",
           "image": "https://hub.saaed.app/uploads/img/1771077520_23-golden-crispy-fried-prawns.jpg"
         },
         {
           "name": "Dynamite Prawns",
           "category": "Soups & Starters",
           "price": "SAR 38.00 / 1",
+          "description": "Marinated fish fried in sun flower oil with tartar sauce",
           "image": "https://hub.saaed.app/uploads/img/1771076781_24-dynamite-prawns-2.jpg"
         },
         {
           "name": "Penne Arrabbiata Pasta",
           "category": "Soups & Starters",
           "price": "SAR 30.00 / 1",
+          "description": "Juicy prawns coated in a light, flavorful batter and fried to golden crisp perfection.",
           "image": "https://hub.saaed.app/uploads/img/1771082634_25-penne-arrabbiata-pasta.jpg"
         },
         {
           "name": "Oven Baked Pasta",
           "category": "Soups & Starters",
           "price": "SAR 35.00 / 1",
+          "description": "Crispy, fried shrimp coated in a spicy mayonnaise dressing",
           "image": "https://hub.saaed.app/uploads/img/1771082402_26-oven-baked-pasta.jpg"
         },
         {
           "name": "Fettuccine Alfredo Pasta",
           "category": "Soups & Starters",
           "price": "SAR 38.00 / 1",
+          "description": "Classic, simple Italian pasta dish featuring a spicy tomato sauce with basil",
           "image": "https://hub.saaed.app/uploads/img/1771077011_27-fettuccine-alfredo-pasta.jpg"
         }
       ]
@@ -184,121 +211,169 @@
           "name": "Kalmi Tikka (Chicken Drum Stick)",
           "category": "Charcoal Barbeque",
           "price": "SAR 44.00 / 1",
+          "description": "Pasta tossed in a rich, creamy pink sauce with saut&eacute;ed vegetables, topped with melted cheese and baked until golden and bubbly.",
           "image": "https://hub.saaed.app/uploads/img/1771078327_28-kalmi-tikka.jpg"
         },
         {
           "name": "Chatkhara Boti (Chicken Bone-in)",
           "category": "Charcoal Barbeque",
           "price": "SAR 46.00 / 1",
+          "description": "Classic Italian-American pasta dish fettuccine tossed with chicken, butter and Parmesan cheese to form a rich, creamy sauce",
           "image": "https://hub.saaed.app/uploads/img/1771083611_29-chatkhara-boti.jpg"
         },
         {
           "name": "Chicken Tikka (Chicken Bone-in)",
           "category": "Charcoal Barbeque",
           "price": "SAR 46.00 / 1",
+          "description": "Marinated chicken drumstick in mughlai style cooked on light flame charcoal",
           "image": "https://hub.saaed.app/uploads/img/1771075955_30-chicken-tikka.jpg"
         },
         {
           "name": "Bohpali Boti (Chicken Bone-in)",
           "category": "Charcoal Barbeque",
           "price": "SAR 46.00 / 1",
+          "description": "Chicken marinated in chatkara masala with chef's special spices & cooked on hot charcoal",
           "image": "https://hub.saaed.app/uploads/img/1771074879_31bhopali.jpg"
         },
         {
           "name": "Mughlai Malai Tikka (Chicken Bone-in)",
           "category": "Charcoal Barbeque",
           "price": "SAR 46.00 / 1",
+          "description": "Half chicken leg and breast marinated in rich lahori spices with drizzled chat masala",
           "image": "https://hub.saaed.app/uploads/img/1771081940_32-mughlai-malai-tikka.jpg"
         },
         {
           "name": "Makhmali Seekh Kebab (Chicken Minced)",
           "category": "Charcoal Barbeque",
           "price": "SAR 46.00 / 1",
+          "description": "Juicy bone-in chicken marinated in traditional Bhopali spices, slow-cooked to perfection for a rich, aromatic, and flavorful taste.",
           "image": "https://hub.saaed.app/uploads/img/1771081581_33-makhmali-seekh-kebab.jpg"
         },
         {
           "name": "Mughlai Malai Boti (Chicken Boneless Cubes)",
           "category": "Charcoal Barbeque",
           "price": "SAR 48.00 / 1",
+          "description": "Succulent bone-in chicken marinated in creamy Mughlai spices and grilled to a tender, buttery perfection with a mild, rich flavor.",
           "image": "https://hub.saaed.app/uploads/img/1771081905_34-mughlai-malai-boti.jpg"
         },
         {
           "name": "Haryali Boti (Chicken Boneless Cubes)",
           "category": "Charcoal Barbeque",
           "price": "SAR 48.00 / 1",
+          "description": "Mouthwatering chicken minced mixed with traditional spices & creamy cheese",
           "image": "https://hub.saaed.app/uploads/img/1771077753_35-haryali-boti.jpg"
         },
         {
           "name": "Chandan Seekh Kebab (Chicken Minced)",
           "category": "Charcoal Barbeque",
           "price": "SAR 50.00 / 1",
+          "description": "Authentic Mughlai style tender chicken breast chunks smothered in a wet rub of yogurt",
           "image": "https://hub.saaed.app/uploads/img/1771075210_36-chandan.jpg"
         },
         {
           "name": "Anarkali Boti (Chicken Boneless Cubes)",
           "category": "Charcoal Barbeque",
           "price": "SAR 52.00 / 1",
+          "description": "Marinated chicken cubes in coriander, mint, spinach and fresh spices cooked on hot charcoal",
           "image": "https://hub.saaed.app/uploads/img/1771062361_37-anarkali-boti.png"
         },
         {
           "name": "Shahjahani Boti (Chicken Boneless Cubes)",
           "category": "Charcoal Barbeque",
           "price": "SAR 52.00 / 1",
+          "description": "Flavorful minced chicken mixed with aromatic spices, topped with chopped bell papers, and grilled on skewers for a smoky, tender taste.",
           "image": "https://hub.saaed.app/uploads/img/1771081440_38-shahjahani.jpg"
         },
         {
           "name": "Angara Boti (Chicken Bone-in)",
           "category": "Charcoal Barbeque",
           "price": "SAR 52.00 / 1",
+          "description": "Marinated chicken cubes in pomegranate juice and chef's special spices with cream, yogurt cooked on charcoal grill",
           "image": "https://hub.saaed.app/uploads/img/1771064108_39-angara.jpg"
         },
         {
           "name": "Shahi Seekh Kebab (Mutton Minced)",
           "category": "Charcoal Barbeque",
           "price": "SAR 52.00 / 1",
+          "description": "Chicken marinated with roasted nuts and chef's special spices to enhance the flavor",
           "image": "https://hub.saaed.app/uploads/img/1771081478_40-shahi-seekh-kebab.jpg"
         },
         {
           "name": "Kasturi Kebab (Chicken Boneless Cubes)",
           "category": "Charcoal Barbeque",
           "price": "SAR 55.00 / 1",
+          "description": "Tender chicken pieces marinated in spicy Angara masala, and grilled to perfection for a smoky, flavorful taste.",
           "image": "https://hub.saaed.app/uploads/img/1771078526_41-kasturi-kebab.jpg"
         },
         {
           "name": "Hunzai Kebab (Mutton Minced)",
           "category": "Charcoal Barbeque",
           "price": "SAR 55.00 / 1",
+          "description": "Mutton minced mixed with chef's special herbs & cheese which melts in mouth",
           "image": "https://hub.saaed.app/uploads/img/1771077986_42-hunzai-kebab.jpg"
         },
         {
           "name": "Karachi Behari Boti (Beef Boneless)",
           "category": "Charcoal Barbeque",
           "price": "SAR 56.00 / 1",
+          "description": "Boneless chicken breast marinated in cream, butter, milk and assorted spices with topping of cheese, cooked on hot charcoal",
           "image": "https://hub.saaed.app/uploads/img/1771078396_43-karachi-behari-boti.jpg"
         },
         {
           "name": "Tandoori Lalazar-Quail (Seasonal)",
           "category": "Charcoal Barbeque",
           "price": "SAR 56.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771080830_44-tandoori-lalazar.jpg"
+          "description": "Combinations of mutton minced and fat with chef's secret spices cooked over hot charcoal",
+          "image": "https://hub.saaed.app/uploads/img/1771149748_44-tandoori-lalazar.jpg"
         },
         {
           "name": "Namkeen Champ (Lamb Bone-in)",
           "category": "Charcoal Barbeque",
           "price": "SAR 56.00 / 1",
+          "description": "Beef tenderloin cubes marinated overnight in yogurt, papaya paste & hot spices",
           "image": "https://hub.saaed.app/uploads/img/1771082311_45-namkeen-champ.jpg"
         },
         {
           "name": "Sonehri Champ (Lamb Bone-in)",
           "category": "Charcoal Barbeque",
           "price": "SAR 58.00 / 1",
+          "description": "Medium size Quail marinated in mild spices as per taste buds of all individual",
           "image": "https://hub.saaed.app/uploads/img/1771081256_46-sonehri-champ.jpg"
         },
         {
           "name": "Sonehri Jheenga-Prawn (Seasonal)",
           "category": "Charcoal Barbeque",
           "price": "SAR 60.00 / 1",
+          "description": "Tender mutton ribs marinated with light touch of salt, pepper & lemon juice",
           "image": "https://hub.saaed.app/uploads/img/1771081218_47-sonehri-jheenga-prawn.jpg"
+        },
+        {
+          "name": "Steam Roast Chargha (Whole Chicken with Rice)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 60.00 / 1",
+          "description": "Tender mutton ribs marinated in traditional Lahori spices signature dish of Zaoq & Ziafat",
+          "image": "https://hub.saaed.app/uploads/img/1771081060_48-steam-chargha-roast.jpg"
+        },
+        {
+          "name": "Grilled Whole Fish (Namkeen)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 65.00 / 1",
+          "description": "Prawn with tail marinated in mughlai spices cooked over burning charcoal",
+          "image": "https://hub.saaed.app/uploads/img/1771077630_49-grilled-whole-fish.jpg"
+        },
+        {
+          "name": "Z & Z Tandoori Khazana (Single)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 62.00 / 1",
+          "description": "A whole chicken marinated in aromatic, chatpata spices, steamed and lightly fried for a flavorful exterior with tender, juicy meat inside.",
+          "image": "https://hub.saaed.app/uploads/img/1771080124_50-zz-tandoori-khazana.jpg"
+        },
+        {
+          "name": "Z & Z Tandoori Khazana (Double)",
+          "category": "Charcoal Barbeque",
+          "price": "SAR 115.00 / 1",
+          "description": "Charcoal grilled fish marinated with lemon juice and chef special spices, skin and bones to seal in moisture",
+          "image": "https://hub.saaed.app/uploads/img/1771080157_51-zz-tandoori-khazana.jpg"
         }
       ]
     },
@@ -309,121 +384,183 @@
           "name": "Ranay Murgh Handi (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 52.00 / 1",
+          "description": "Assorted mouthwatering delicious mixed BBQ served along with delicious mint sauce",
           "image": "https://hub.saaed.app/uploads/img/1771082986_52-ranay-murgh.jpg"
         },
         {
           "name": "Murgh Achar Wala (Boneless Cubes)",
           "category": "Mughlai Curries",
           "price": "SAR 52.00 / 1",
+          "description": "Assorted mouthwatering delicious mixed BBQ served along with delicious mint sauce, Chatkara Boti, Mughlai Boti, Makhmali Kebab, Shahi Seekh Kebab, Sonehri Champ",
           "image": "https://hub.saaed.app/uploads/img/1771082057_53-murgh-achar-wala.jpg"
         },
         {
           "name": "Chicken Hara Masala Handi (Boneless Cubes)",
           "category": "Mughlai Curries",
           "price": "SAR 55.00 / 1",
+          "description": "Chicken drum legs cooked in red tomato & butter garnishing with ginger & green chillies",
           "image": "https://hub.saaed.app/uploads/img/1771075702_54-chicken-hara-masala-handi.jpg"
         },
         {
           "name": "Murgh Makhani – Butter Chicken (Boneless Cubes)",
           "category": "Mughlai Curries",
           "price": "SAR 55.00 / 1",
+          "description": "Chicken cooked in a copper pot with tomato gravy & assorted pickles garnished with ginger",
           "image": "https://hub.saaed.app/uploads/img/1771082099_55-murgh-makhani.jpg"
         },
         {
           "name": "Shikarpuri Chicken Karahi (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 55.00 / 1",
+          "description": "Chicken cooked in creamy roasted nuts gravy with tingle of royal saffron",
           "image": "https://hub.saaed.app/uploads/img/1771081398_56-shikar-puri-chicken-karahi-2.jpg"
         },
         {
           "name": "Chicken Tikka Masala (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 55.00 / 1",
+          "description": "Marinated chicken grilled on charcoal then cooked in onion and tomato gravy drizzled with butter usually prepared in the palace of the Royal Mughlai Emperor",
           "image": "https://hub.saaed.app/uploads/img/1771083567_57-chikcen-tikka-masala.jpg"
         },
         {
           "name": "Atishi Murgh Masala (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 56.00 / 1",
+          "description": "Chicken cooked in tomato & butter garnishing with ginger, green chillies & coriander",
           "image": "https://hub.saaed.app/uploads/img/1771064218_59-atishi.jpg"
         },
         {
           "name": "Punjabi Palak Gosht (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 55.00 / 1",
+          "description": "Juicy chicken marinated in spices and yogurt, grilled, and cooked in a rich, creamy, spiced tomato gravy.",
           "image": "https://hub.saaed.app/uploads/img/1771082824_58-punjabi-palak-gosht.jpg"
         },
         {
           "name": "Murgh Naulakha (Boneless Long Strips)",
           "category": "Mughlai Curries",
           "price": "SAR 56.00 / 1",
+          "description": "Chicken marinated with spices, cooked to perfection, and finished with a coal dum for a smoky, flavorful taste.",
           "image": "https://hub.saaed.app/uploads/img/1771082130_60-murgh-naulakha.jpg"
         },
         {
           "name": "Chicken Rezala Curry (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 56.00 / 1",
+          "description": "Mutton cooked with spinach in the fascinating Traditions of Punjab",
           "image": "https://hub.saaed.app/uploads/img/1771075781_61-chicken-rezala.jpg"
         },
         {
           "name": "Hyderabadi Nizami Dum ka Murgh (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 56.00 / 1",
+          "description": "Marinated chicken grilled over charcoal, then simmered in a rich onion and tomato gravy, finished with butter",
           "image": "https://hub.saaed.app/uploads/img/1771078064_62nizami-dam-ka-mrgh.jpg"
         },
         {
           "name": "Chicken Changazi Curry (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 56.00 / 1",
+          "description": "Bone-in chicken marinated with cashews and yogurt, cooked in a creamy, mildly spiced Mughal-style white gravy.",
           "image": "https://hub.saaed.app/uploads/img/1771075667_63-chicken-changezi.jpg"
         },
         {
           "name": "Darbari Murgh Handi (Boneless Cubes)",
           "category": "Mughlai Curries",
           "price": "SAR 58.00 / 1",
+          "description": "Tender chicken marinated with spices, yogurt, saffron, cashews, and milk, slow-cooked in desi ghee over charcoal for a smoky, rich taste of aromatic gravy.",
           "image": "https://hub.saaed.app/uploads/img/1771076632_64-darbari-murgh-handi.jpg"
         },
         {
           "name": "Madrasi Chicken Handi (Boneless Cubes)",
           "category": "Mughlai Curries",
           "price": "SAR 58.00 / 1",
+          "description": "Bone-in chicken marinated in chef's spices, fried, and cooked in a rich, aromatic Mughal-style gravy.",
           "image": "https://hub.saaed.app/uploads/img/1771079015_65-madrasi-chicken-handi.jpg"
         },
         {
           "name": "Rajasthani Chicken Handi (Boneless Cubes)",
           "category": "Mughlai Curries",
           "price": "SAR 58.00 / 1",
+          "description": "Chicken cubes cooked in tomato gravy, cream & butter with green chili for taste texture",
           "image": "https://hub.saaed.app/uploads/img/1771082909_66-rajasthani-chicken-handi.jpg"
         },
         {
           "name": "Peshawari Gosht (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 62.00 / 1",
+          "description": "Tender boneless chicken cubes cooked in a creamy coconut, rich and aromatic Mughlai-style gravy.",
           "image": "https://hub.saaed.app/uploads/img/1771082674_67-peshawari.jpg"
         },
         {
           "name": "Mutton Karahi (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 62.00 / 1",
+          "description": "Tender boneless chicken cubes cooked in a rich, creamy, tamarind-infused curry with aromatic spices and smoky, authentic Rajasthani flavors.",
           "image": "https://hub.saaed.app/uploads/img/1771082200_68-mutton-karahi.jpg"
         },
         {
           "name": "Balti Gosht (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 65.00 / 1",
+          "description": "Mutton cooked in traditional Pashtun spices, which will take your memories to Northern Pakistan",
           "image": "https://hub.saaed.app/uploads/img/1771064301_69-balti-gosht.jpg"
         },
         {
           "name": "Shahi Mutton White Karahi (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 65.00 / 1",
+          "description": "Mutton cooked in copper pot with richly flavored tomato gravy topped with ginger, green chillies & coriander",
           "image": "https://hub.saaed.app/uploads/img/1771083344_70-shahi-mutton-white-karahi.jpg"
         },
         {
           "name": "Mughlai Mutton Mumtaz (Bone-in)",
           "category": "Mughlai Curries",
           "price": "SAR 65.00 / 1",
+          "description": "Tender mutton cooked in chef's special spices & tomato red paste gravy in tandoori style",
           "image": "https://hub.saaed.app/uploads/img/1771081976_71-mughlai-mutton-mumtaz.jpg"
+        },
+        {
+          "name": "Zafrani Gosht (Boneless)",
+          "category": "Mughlai Curries",
+          "price": "SAR 68.00 / 1",
+          "description": "Bone-in mutton cooked in a delicate, creamy white gravy with a slightly touch of spices.",
+          "image": "https://hub.saaed.app/uploads/img/1771080064_72-zafrani-gosht.jpg"
+        },
+        {
+          "name": "Hyderabadi Mutton (Boneless)",
+          "category": "Mughlai Curries",
+          "price": "SAR 68.00 / 1",
+          "description": "Bone-in mutton cooked in a royal blend of spices with coriander, onions, green chili, cashews and cream, resulting in a rich aromatic, and flavorful curry.",
+          "image": "https://hub.saaed.app/uploads/img/1771078026_73-hyderabadi-mutton.jpg"
+        },
+        {
+          "name": "Royal Fish Curry",
+          "category": "Mughlai Curries",
+          "price": "SAR 62.00 / 1",
+          "description": "Mutton cooked in creamy roasted nuts gravy with tingle of royal saffron",
+          "image": "https://hub.saaed.app/uploads/img/1771149306_74-royal-fish-curry.jpg"
+        },
+        {
+          "name": "Harra Fish",
+          "category": "Mughlai Curries",
+          "price": "SAR 68.00 / 1",
+          "description": "Mutton cooked in tomato gravy flavored with fenugreek seeds to perfection",
+          "image": "https://hub.saaed.app/uploads/img/1771077700_75-harra-fish.jpg"
+        },
+        {
+          "name": "Mughlai Prawn Delight",
+          "category": "Mughlai Curries",
+          "price": "SAR 68.00 / 1",
+          "description": "Tender boneless king fish cooked in a chef's special spices curry for a rich, aromatic, and flavorful Fish Curry.",
+          "image": "https://hub.saaed.app/uploads/img/1771082017_76-mughlai-prawn-delight.jpg"
+        },
+        {
+          "name": "Prawns Pathia",
+          "category": "Mughlai Curries",
+          "price": "SAR 68.00 / 1",
+          "description": "Pan fried fish marinated in hot spices, lemon juice served with salsa sauce & french fries",
+          "image": "https://hub.saaed.app/uploads/img/1771082791_77-prawns-pathia.jpg"
         }
       ]
     },
@@ -434,24 +571,28 @@
           "name": "Tarka Nihari (Beef Boneless)",
           "category": "Beef Nihari",
           "price": "SAR 52.00 / 1",
+          "description": "Juicy prawns cooked with a blend of aromatic spices, perfection for a creamy, savory, and aromatic Prawn Curry seafood flavors.",
           "image": "https://hub.saaed.app/uploads/img/1771080711_85-tarka-nihari.jpg"
         },
         {
           "name": "Maghaz Nihari (Beef Boneless)",
           "category": "Beef Nihari",
           "price": "SAR 58.00 / 1",
+          "description": "Succulent prawns cooked in a tangy and slightly sweet Pathia sauce made with tamarind, spices, and herbs, offering a perfect balance of heat and flavor.",
           "image": "https://hub.saaed.app/uploads/img/1771081549_86-magaz-nihari.jpg"
         },
         {
           "name": "Nalli Nihari (Beef Boneless)",
           "category": "Beef Nihari",
           "price": "SAR 62.00 / 1",
+          "description": "Tender boneless beef slow-cooked in rich, spiced gravy and finished with aromatic tarka for a flavorful Tarka Nihari.",
           "image": "https://hub.saaed.app/uploads/img/1771082262_87-nalli-nihari.jpg"
         },
         {
           "name": "Z & Z Special Nihari (Beef Boneless)",
           "category": "Beef Nihari",
           "price": "SAR 65.00 / 1",
+          "description": "Tender boneless beef cooked with brain in a rich, spiced gravy for a flavorful and creamy Maghaz Nihari.",
           "image": "https://hub.saaed.app/uploads/img/1771080197_88-zz-special-nihari.jpg"
         }
       ]
@@ -463,42 +604,49 @@
           "name": "Chicken Taka Tak (Boneless Small Pieces)",
           "category": "Tawa Specialities",
           "price": "SAR 48.00 / 1",
+          "description": "Tender boneless beef slow-cooked with marrow bones in a rich, aromatic gravy for a flavorful Nalli Nihari.",
           "image": "https://hub.saaed.app/uploads/img/1771075834_78-chicken-taka-tak.jpg"
         },
         {
           "name": "Kebab Masala (Mutton Minced)",
           "category": "Tawa Specialities",
           "price": "SAR 52.00 / 1",
+          "description": "Tender boneless beef slow-cooked in a rich, spiced gravy with marrow and brain for the signature flavorful Z n Z Special Nihari.",
           "image": "https://hub.saaed.app/uploads/img/1771078570_79-kebab-masala.jpg"
         },
         {
           "name": "Tawa Qeema (Mutton Minced)",
           "category": "Tawa Specialities",
           "price": "SAR 55.00 / 1",
+          "description": "Cooked melodiously chicken prepared on a hot plate with butter & crushed black pepper",
           "image": "https://hub.saaed.app/uploads/img/1771080637_80-tawa-qeema.jpg"
         },
         {
           "name": "Maghaz Masala (Mutton Brain)",
           "category": "Tawa Specialities",
           "price": "SAR 58.00 / 1",
+          "description": "Mutton minced grilled on charcoal cooked in mild gravy with chef's special spices",
           "image": "https://hub.saaed.app/uploads/img/1771081513_81-maghaz-masala.jpg"
         },
         {
           "name": "Champ Masala (Mutton Bone in)",
           "category": "Tawa Specialities",
           "price": "SAR 60.00 / 1",
+          "description": "Mutton minced cooked in mild gravy with green chillies, tomatoes, traditional lahori spices, yogurt & butter, served in a hot sizzling plate",
           "image": "https://hub.saaed.app/uploads/img/1771075173_82-champ-masala.jpg"
         },
         {
           "name": "Batair Masala-Quail (Seasonal)",
           "category": "Tawa Specialities",
           "price": "SAR 60.00 / 1",
+          "description": "Lamb brain cooked in mild gravy with chef's special spices, ginger garlic paste & lemon juice",
           "image": "https://hub.saaed.app/uploads/img/1771064460_83-batair-masala-quail.jpg"
         },
         {
           "name": "Machalti Hoi Fish",
           "category": "Tawa Specialities",
           "price": "SAR 68.00 / 1",
+          "description": "Lamb chops cooked in yogurt tomatoes & butter seasoned with dry fenugreek",
           "image": "https://hub.saaed.app/uploads/img/1771078979_84-machalti-hoi-fish.jpg"
         }
       ]
@@ -510,42 +658,49 @@
           "name": "Lahori Channa",
           "category": "Vegetables & Lentils",
           "price": "SAR 32.00 / 1",
+          "description": "Medium size quail cooked in mild gravy garnished with coriander & ginger",
           "image": "https://hub.saaed.app/uploads/img/1771078835_89-lahori-channa.jpg"
         },
         {
           "name": "Rasmisay Rajma",
           "category": "Vegetables & Lentils",
           "price": "SAR 32.00 / 1",
+          "description": "King fish gently cooked with light spices, garlic and herbs, comforting taste, soft juicy and easy to eat served with french fries",
           "image": "https://hub.saaed.app/uploads/img/1771083077_90-rasmisay-rajma.jpg"
         },
         {
           "name": "Mughlai Bhujia (Mixed Vegetables)",
           "category": "Vegetables & Lentils",
           "price": "SAR 34.00 / 1",
+          "description": "Traditional Lahori-style chickpeas slow-cooked with onions, tomatoes, and aromatic spices for a rich, spicy flavor.",
           "image": "https://hub.saaed.app/uploads/img/1771081816_91-mughlai-bhujia.jpg"
         },
         {
           "name": "Dal Makhani",
           "category": "Vegetables & Lentils",
           "price": "SAR 36.00 / 1",
+          "description": "Soft & well-cooked red kidney beans gravy done in with kashmiri chilli",
           "image": "https://hub.saaed.app/uploads/img/1771076540_92-dal-makhani.jpg"
         },
         {
           "name": "Palak Paneer",
           "category": "Vegetables & Lentils",
           "price": "SAR 38.00 / 1",
+          "description": "Combinations of green peas, potato and carrot cooked in a pan with creamy sauce",
           "image": "https://hub.saaed.app/uploads/img/1771082563_93-palak-paneer.jpg"
         },
         {
           "name": "Qasar-E-Pukhtan",
           "category": "Vegetables & Lentils",
           "price": "SAR 40.00 / 1",
+          "description": "Mixture of black lentil & red beans cooked in tomato & onion gravy with aromatic spices",
           "image": "https://hub.saaed.app/uploads/img/1771082866_94-qasar-e-pukhtan.jpg"
         },
         {
           "name": "Shahi Mutter Paneer Curry",
           "category": "Vegetables & Lentils",
           "price": "SAR 42.00 / 1",
+          "description": "Spinach cooked in traditional Punjabi style with a blend of cottage cheese",
           "image": "https://hub.saaed.app/uploads/img/1771083291_95-shahi-mutter-paneer-curry.jpg"
         }
       ]
@@ -557,54 +712,63 @@
           "name": "Buttered Steamed Rice",
           "category": "Rice",
           "price": "SAR 18.00 / 1",
+          "description": "Popular Mughlai dish cottage cheese cooked in red gravy makes it very rich in taste",
           "image": "https://hub.saaed.app/uploads/img/1771074991_96-buttered-steamed-rice.jpg"
         },
         {
           "name": "Nauratan Biryani (Mixed Vegetables)",
           "category": "Rice",
           "price": "SAR 38.00 / 1",
+          "description": "Flavorful paneer and green peas cooked in a rich blend of spices, yogurt, and tomato for a creamy, aromatic curry.",
           "image": "https://hub.saaed.app/uploads/img/1771082365_97-nauratan-biryani.jpg"
         },
         {
           "name": "Karachi Special Biryani (Chicken Bone-in)",
           "category": "Rice",
           "price": "SAR 48.00 / 1",
+          "description": "Steamed rice cooked in butter and garnished with fried onion",
           "image": "https://hub.saaed.app/uploads/img/1771078431_98-karachi-special-biryani.jpg"
         },
         {
           "name": "Satrangi Biryani (Chicken Boneless)",
           "category": "Rice",
           "price": "SAR 52.00 / 1",
+          "description": "Perfection of biryani rice with 9 types of vegetables cooked in chef's special spices",
           "image": "https://hub.saaed.app/uploads/img/1771083207_99-satrangi-biryani.jpg"
         },
         {
           "name": "Butter Chicken Biryani (Chicken Boneless Cubes)",
           "category": "Rice",
           "price": "SAR 55.00 / 1",
+          "description": "Authentic flavorful Pakistani rice dish with unique spicy tangy balance & tender meat",
           "image": "https://hub.saaed.app/uploads/img/1771074970_100-butter-chicken-biryani.jpg"
         },
         {
           "name": "Kujja Mutton Dum Biryani (Mutton Bone-in)",
           "category": "Rice",
           "price": "SAR 62.00 / 1",
+          "description": "Traditional chicken biryani splashed with the colors of the rainbow",
           "image": "https://hub.saaed.app/uploads/img/1771078769_101-kujja-mutton-dum-biryani.jpg"
         },
         {
           "name": "Chilman Biryani (Mutton Boneless)",
           "category": "Rice",
           "price": "SAR 64.00 / 1",
+          "description": "Grilled chicken cubes in a creamy butter and tomato gravy, cashew, layered with fragrant basmati rice, rich buttery flavor, and the irresistible aroma of traditional biryani spices.",
           "image": "https://hub.saaed.app/uploads/img/1771076198_102-chilman-biryani.jpg"
         },
         {
           "name": "Zaoq-e-Nawab Fish Biryani",
           "category": "Rice",
           "price": "SAR 65.00 / 1",
+          "description": "Mutton with bone cooked in a clay pot with chef's secret spices & steamed biryani rice on charcoal that gives unique smokey flavor, garnished with coriander & fried onions served in the clay pot",
           "image": "https://hub.saaed.app/uploads/img/1771079978_103-zaoq-e-nawab-fish-biryani.jpg"
         },
         {
           "name": "Emperor's Prawn Biryani",
           "category": "Rice",
           "price": "SAR 68.00 / 1",
+          "description": "Long grain steamed rice cooked in marinated mutton and secret spices, top selling dish of Z n Z restaurant",
           "image": "https://hub.saaed.app/uploads/img/1771076885_104-emperors-prawn-biryani.jpg"
         }
       ]
@@ -616,54 +780,63 @@
           "name": "Tandoori Roti",
           "category": "Tandoor",
           "price": "SAR 2.00 / 1",
+          "description": "King fish marinated with spices, layered with fragrant basmati rice, and cooked to perfection for a flavorful Fish Biryani.",
           "image": "https://hub.saaed.app/uploads/img/1771080758_105-tandoori-roti.jpg"
         },
         {
           "name": "Khameeri Roti",
           "category": "Tandoor",
           "price": "SAR 3.00 / 1",
+          "description": "Juicy spiced prawns layered with fragrant basmati rice for a flavorful Prawn Biryani.",
           "image": "https://hub.saaed.app/uploads/img/1771078607_106-khameeri-roti.jpg"
         },
         {
           "name": "Plain Naan",
           "category": "Tandoor",
           "price": "SAR 5.00 / 1",
+          "description": "Unleavened whole wheat bread baked in a clay oven tandoor",
           "image": "https://hub.saaed.app/uploads/img/1771082746_107-plain-naan.jpg"
         },
         {
           "name": "Roghni Naan",
           "category": "Tandoor",
           "price": "SAR 6.00 / 1",
+          "description": "Soft & fluffy traditional bread made from fermented dough, light texture with a slighty tangy taste",
           "image": "https://hub.saaed.app/uploads/img/1771083117_108-roghni-naan.jpg"
         },
         {
           "name": "Kalonji Naan",
           "category": "Tandoor",
           "price": "SAR 6.00 / 1",
+          "description": "Naan is cooked in a tandoor made of plain dough",
           "image": "https://hub.saaed.app/uploads/img/1771078361_109-kalonji-naan.jpg"
         },
         {
           "name": "Garlic Naan",
           "category": "Tandoor",
           "price": "SAR 6.00 / 1",
+          "description": "Mughlai flat bread made with all-purpose flour, egg, milk and sesame seeds",
           "image": "https://hub.saaed.app/uploads/img/1771077457_110-garlic-naan.jpg"
         },
         {
           "name": "Tandoori Paratha",
           "category": "Tandoor",
           "price": "SAR 8.00 / 1",
+          "description": "Naan prepared with black cumin seeds for the little bursts",
           "image": "https://hub.saaed.app/uploads/img/1771080790_111-tandoori-paratha.jpg"
         },
         {
           "name": "Cheese Naan",
           "category": "Tandoor",
           "price": "SAR 12.00 / 1",
+          "description": "Bread stuffed topped with garlic and coriander cooked in tandoor",
           "image": "https://hub.saaed.app/uploads/img/1771075614_112-cheese-naan.jpg"
         },
         {
           "name": "Basket of Breads",
           "category": "Tandoor",
           "price": "SAR 16.00 / 1",
+          "description": "Layered whole wheat bread cooked in tandoor",
           "image": "https://hub.saaed.app/uploads/img/1771064364_113-basket-of-breads.jpg"
         }
       ]
@@ -675,42 +848,49 @@
           "name": "Gulab Jamun",
           "category": "Dessert",
           "price": "SAR 14.00 / 1",
+          "description": "Unleavened bread stuffed with cheddar cheese and crushed red chilli",
           "image": "https://hub.saaed.app/uploads/img/1771077665_114-gulab-jamun.jpg"
         },
         {
           "name": "Kheer",
           "category": "Dessert",
           "price": "SAR 16.00 / 1",
+          "description": "Mixed combinations of tandoori roti, khameeri roti, roghni naan & garlic naan",
           "image": "https://hub.saaed.app/uploads/img/1771078656_115-kheer.jpg"
         },
         {
           "name": "Rasmalai",
           "category": "Dessert",
           "price": "SAR 18.00 / 1",
+          "description": "Wheat balls in cardamom flavored with sugar syrup",
           "image": "https://hub.saaed.app/uploads/img/1771083029_116-rasmalai.jpg"
         },
         {
           "name": "Lab-E-Shireen",
           "category": "Dessert",
           "price": "SAR 20.00 / 1",
+          "description": "Pudding made with boiled rice, flavored with cardamom, raisins, saffron, dry fruits & nuts",
           "image": "https://hub.saaed.app/uploads/img/1771078798_117-lab-e-shireen.jpg"
         },
         {
           "name": "Delicious Pakistani Falooda",
           "category": "Dessert",
           "price": "SAR 20.00 / 1",
+          "description": "Cheese patties soaked in milk syrup, almonds & nuts",
           "image": "https://hub.saaed.app/uploads/img/1771076708_118-delicious-pakistani-falooda.jpg"
         },
         {
           "name": "Pistachio Rabri",
           "category": "Dessert",
           "price": "SAR 22.00 / 1",
+          "description": "Vermicelli with custard powder, chopped almond, mix fruit, milk, cream & assorted jelly",
           "image": "https://hub.saaed.app/uploads/img/1771082710_119-pistachio-rabri.jpg"
         },
         {
           "name": "Gajar Halwa (Seasonal)",
           "category": "Dessert",
           "price": "SAR 24.00 / 1",
+          "description": "Ice-cream with rose syrup, milk, dry fruits, strawberry jelly and falooda vermicelli,basil seeds, sugar syrup, pineapple and crushed ice",
           "image": "https://hub.saaed.app/uploads/img/1771077419_120-gajar-halwa-seasonal.jpg"
         }
       ]
@@ -722,84 +902,98 @@
           "name": "Water Small",
           "category": "Cold Beverages",
           "price": "SAR 3.00 / 1",
+          "description": "A rich, creamy dessert made from thickened milk, sweetened and topped with crushed pistachios for a nutty flavor.",
           "image": "https://hub.saaed.app/uploads/img/1771080496_121-water.jpg"
         },
         {
           "name": "Water Large",
           "category": "Cold Beverages",
           "price": "SAR 5.00 / 1",
+          "description": "A slow cooked recipe of making delicious halwa with carrots, milk, sugar, dry fruits & nuts",
           "image": "https://hub.saaed.app/uploads/img/1771080529_122-water.jpg"
         },
         {
           "name": "Soft Drinks (Regular & Diet)",
           "category": "Cold Beverages",
           "price": "SAR 5.00 / 1",
+          "description": "Drinking Water (Small)",
           "image": "https://hub.saaed.app/uploads/img/1771081302_123-soft-drinks.jpg"
         },
         {
           "name": "Spring Mineral water",
           "category": "Cold Beverages",
           "price": "SAR 8.00 / 1",
+          "description": "Drinking Water (Large)",
           "image": "https://hub.saaed.app/uploads/img/1771081095_124-spring-mineral-water.jpg"
         },
         {
           "name": "Fresh Lime",
           "category": "Cold Beverages",
           "price": "SAR 10.00 / 1",
+          "description": "Soft Drinks (Regular & Diet)",
           "image": "https://hub.saaed.app/uploads/img/1771077287_125-fresh-lime.jpg"
         },
         {
           "name": "Sparkling Water",
           "category": "Cold Beverages",
           "price": "SAR 12.00 / 1",
+          "description": "Spring Mineral Water",
           "image": "https://hub.saaed.app/uploads/img/1771081130_126-sparkling-water.jpg"
         },
         {
           "name": "Lassi (Sweet & Salty)",
           "category": "Cold Beverages",
           "price": "SAR 12.00 / 1",
+          "description": "Sparkling Water",
           "image": "https://hub.saaed.app/uploads/img/1771078878_127-lassi.jpg"
         },
         {
           "name": "Ice Tea (Assorted Flavors)",
           "category": "Cold Beverages",
           "price": "SAR 14.00 / 1",
+          "description": "Fresh Lime",
           "image": "https://hub.saaed.app/uploads/img/1771078154_128-ice-tea.jpg"
         },
         {
           "name": "Mint Lassi",
           "category": "Cold Beverages",
           "price": "SAR 14.00 / 1",
+          "description": "Lassi (Sweet & Salty)",
           "image": "https://hub.saaed.app/uploads/img/1771081702_129-mint-lassi.jpg"
         },
         {
           "name": "Mint Margarita",
           "category": "Cold Beverages",
           "price": "SAR 15.00 / 1",
+          "description": "Ice Tea (Assorted Flavors)",
           "image": "https://hub.saaed.app/uploads/img/1771081737_130-mint-margarita.jpg"
         },
         {
           "name": "Mango Lassi",
           "category": "Cold Beverages",
           "price": "SAR 16.00 / 1",
+          "description": "Mint Lassi",
           "image": "https://hub.saaed.app/uploads/img/1771081619_131-mango-lassi.jpg"
         },
         {
           "name": "Virgin Mojitos (Assorted Flavors)",
           "category": "Cold Beverages",
           "price": "SAR 16.00 / 1",
+          "description": "Mint Margarita",
           "image": "https://hub.saaed.app/uploads/img/1771080572_132-virgin-mojitos.jpg"
         },
         {
           "name": "Fresh Seasonal Juices",
           "category": "Cold Beverages",
           "price": "SAR 18.00 / 1",
+          "description": "Mango Lassi",
           "image": "https://hub.saaed.app/uploads/img/1771077385_133-fresh-seasonal-juice.jpg"
         },
         {
           "name": "Fresh Orange Juice",
           "category": "Cold Beverages",
           "price": "SAR 18.00 / 1",
+          "description": "Virgin Mojitos (Assorted Flavors)",
           "image": "https://hub.saaed.app/uploads/img/1771077356_134-fresh-orange-juice.jpg"
         }
       ]
@@ -811,24 +1005,28 @@
           "name": "Sulaimani Tea",
           "category": "Hot Beverages",
           "price": "SAR 6.00 / 1",
+          "description": "Sulaimani Tea",
           "image": "https://hub.saaed.app/uploads/img/1771080919_135-sulaimani-tea.jpg"
         },
         {
           "name": "Green Tea",
           "category": "Hot Beverages",
           "price": "SAR 6.00 / 1",
+          "description": "Green Tea",
           "image": "https://hub.saaed.app/uploads/img/1771077592_136-green-tea.jpg"
         },
         {
           "name": "Karak Chai",
           "category": "Hot Beverages",
           "price": "SAR 8.00 / 1",
+          "description": "Karak Chai",
           "image": "https://hub.saaed.app/uploads/img/1771078461_137-karak-chai.jpg"
         },
         {
           "name": "Kashmiri Tea (Seasonal)",
           "category": "Hot Beverages",
           "price": "SAR 15.00 / 1",
+          "description": "Kashmiri Tea (Seasonal)",
           "image": "https://hub.saaed.app/uploads/img/1771078488_138-kashmiri-tea.jpg"
         }
       ]
@@ -840,66 +1038,77 @@
           "name": "Green Laminto",
           "category": "Mocktails",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771077551_139-green-laminto.jpg"
         },
         {
           "name": "Dancing Strawberry",
           "category": "Mocktails",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076584_140-dancing-strawberry.jpg"
         },
         {
           "name": "Kiwi Daiquiri",
           "category": "Mocktails",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771078742_141-kiwi-daiquiri.jpg"
         },
         {
           "name": "Mango Tango",
           "category": "Mocktails",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771081661_142-mango-tango.jpg"
         },
         {
           "name": "Sizzling Splash",
           "category": "Mocktails",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771081341_143-sizzling-splash.jpg"
         },
         {
           "name": "Electric Blue",
           "category": "Mocktails",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076850_144-electric-blue.jpg"
         },
         {
           "name": "Pakola Limca",
           "category": "Mocktails",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771082440_145-pakola-limca.jpg"
         },
         {
           "name": "Berry Mojito",
           "category": "Mocktails",
           "price": "SAR 18.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771074904_146-berry-mojito.jpg"
         },
         {
           "name": "Passion Mojito",
           "category": "Mocktails",
           "price": "SAR 18.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771082600_147-passion-mojito.jpg"
         },
         {
           "name": "Strawbarry Mojito",
           "category": "Mocktails",
           "price": "SAR 18.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771081018_148-strawbarry-mojito.jpg"
         },
         {
           "name": "Kiwi Colada",
           "category": "Mocktails",
           "price": "SAR 18.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771078715_149-kiwi-colada.jpg"
         }
       ]
@@ -911,30 +1120,35 @@
           "name": "Mix Berries Smoothie",
           "category": "Smoothies & Shakes",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771081774_150-mix-berries-smoothies.jpg"
         },
         {
           "name": "Strawberry Smoothie",
           "category": "Smoothies & Shakes",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771080983_151-strawberry-smoothies.jpg"
         },
         {
           "name": "Lotus Creamy Shake",
           "category": "Smoothies & Shakes",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771078945_152-lotus-creamy-shakes.jpg"
         },
         {
           "name": "Cookies & Cream",
           "category": "Smoothies & Shakes",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076299_153-cookies-cream.jpg"
         },
         {
           "name": "Dates & Nuts Milkshake",
           "category": "Smoothies & Shakes",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076663_154-dates-nuts-milk-shake.jpg"
         }
       ]
@@ -946,36 +1160,42 @@
           "name": "Coffee Honey Lime",
           "category": "Cold Coffee",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076269_155-coffee-honey-lime.jpg"
         },
         {
           "name": "Iced Spanish Latte",
           "category": "Cold Coffee",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771078255_156-iced-spanish-latte.jpg"
         },
         {
           "name": "Iced Mocha",
           "category": "Cold Coffee",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771078224_157-iced-mocha.jpg"
         },
         {
           "name": "Iced Caramel Macchiato",
           "category": "Cold Coffee",
           "price": "SAR 22.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771078193_158-iced-caramel-macchiato.jpg"
         },
         {
           "name": "Hazelnut Macchiato",
           "category": "Cold Coffee",
           "price": "SAR 22.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771077867_159-hazelnut-macchiato.jpg"
         },
         {
           "name": "Coffee Frappuccino",
           "category": "Cold Coffee",
           "price": "SAR 22.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076237_160-coffee-frappuccino.jpg"
         }
       ]
@@ -987,126 +1207,104 @@
           "name": "Espresso",
           "category": "Hot Coffee",
           "price": "SAR 10.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076938_161-espresso.jpg"
         },
         {
           "name": "Americano",
           "category": "Hot Coffee",
           "price": "SAR 12.00 / 1",
+          "description": "An Americano is a smooth coffee made by adding hot water to espresso, giving it a rich aroma with a lighter, milder taste. Perfect for enjoying bold flavor without the strong intensity.",
           "image": "https://hub.saaed.app/uploads/img/1771062963_162-americano.png"
         },
         {
           "name": "Arabic Coffee With Cardamom",
           "category": "Hot Coffee",
           "price": "SAR 14.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771064161_163-arabic-coffee-with-cardamom.jpg"
         },
         {
           "name": "Cappuccino",
           "category": "Hot Coffee",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771075063_164-cappuccino.jpg"
         },
         {
           "name": "Flat White",
           "category": "Hot Coffee",
           "price": "SAR 16.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771077153_165-flat-white.jpg"
         },
         {
           "name": "Spanish Latte",
           "category": "Hot Coffee",
           "price": "SAR 18.00 / 1",
+          "description": "Spanish Latte is a creamy espresso blended with steamed milk and sweetened condensed milk, creating a smooth and perfectly sweet coffee.",
           "image": "https://hub.saaed.app/uploads/img/1771081177_166-spanish-latte.jpg"
         },
         {
           "name": "Hot Chocolate",
           "category": "Hot Coffee",
           "price": "SAR 18.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771077904_167-hot-chocolate.jpg"
         },
         {
           "name": "Cortado Coffee",
           "category": "Hot Coffee",
           "price": "SAR 18.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771076336_168-cortado-coffee.jpg"
         },
         {
           "name": "Hazelnut Latte",
           "category": "Hot Coffee",
           "price": "SAR 20.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771077802_169-hazelnut-latte.jpg"
         },
         {
           "name": "Caramel Macchiato",
           "category": "Hot Coffee",
           "price": "SAR 22.00 / 1",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771075105_170-caramel-macchiato.jpg"
         }
       ]
     },
     {
-      "categoryName": "Close",
+      "categoryName": "N/A",
       "dishes": [
         {
-          "name": "Espresso",
-          "category": "Hot Coffee",
-          "price": "SAR 10.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771076938_161-espresso.jpg"
+          "name": "Buffet Deal",
+          "category": "N/A",
+          "price": "SAR 70.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
         },
         {
-          "name": "Americano",
-          "category": "Hot Coffee",
-          "price": "SAR 12.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771062963_162-americano.png"
+          "name": "Kid Buffet",
+          "category": "N/A",
+          "price": "SAR 35.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
         },
         {
-          "name": "Arabic Coffee With Cardamom",
-          "category": "Hot Coffee",
-          "price": "SAR 14.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771064161_163-arabic-coffee-with-cardamom.jpg"
+          "name": "Ramadan Buffet",
+          "category": "N/A",
+          "price": "SAR 95.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
         },
         {
-          "name": "Cappuccino",
-          "category": "Hot Coffee",
-          "price": "SAR 16.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771075063_164-cappuccino.jpg"
-        },
-        {
-          "name": "Flat White",
-          "category": "Hot Coffee",
-          "price": "SAR 16.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771077153_165-flat-white.jpg"
-        },
-        {
-          "name": "Spanish Latte",
-          "category": "Hot Coffee",
-          "price": "SAR 18.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771081177_166-spanish-latte.jpg"
-        },
-        {
-          "name": "Hot Chocolate",
-          "category": "Hot Coffee",
-          "price": "SAR 18.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771077904_167-hot-chocolate.jpg"
-        },
-        {
-          "name": "Cortado Coffee",
-          "category": "Hot Coffee",
-          "price": "SAR 18.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771076336_168-cortado-coffee.jpg"
-        },
-        {
-          "name": "Hazelnut Latte",
-          "category": "Hot Coffee",
-          "price": "SAR 20.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771077802_169-hazelnut-latte.jpg"
-        },
-        {
-          "name": "Caramel Macchiato",
-          "category": "Hot Coffee",
-          "price": "SAR 22.00 / 1",
-          "image": "https://hub.saaed.app/uploads/img/1771075105_170-caramel-macchiato.jpg"
+          "name": "Ramadan Kid Buffet",
+          "category": "N/A",
+          "price": "SAR 45.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
         }
       ]
     }

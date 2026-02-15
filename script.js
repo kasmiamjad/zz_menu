@@ -5,7 +5,7 @@ let currentCategory = 'all';
 const categoryIcons = {
     'all': '🍽️',
     'main-dish': '🍖',
-    'salad': '🥗',
+    'salad': '~🥗',
     'soups-&-starters': '🍲',
     'charcoal-barbeque': '🔥',
     'mughlai-curries': '🍛',
