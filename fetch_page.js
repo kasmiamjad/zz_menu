@@ -1,5 +1,5 @@
-const https = require('https');
-const fs = require('fs');
+import https from 'https';
+import fs from 'fs';
 
 const url = 'https://hub.saaed.app/catalogue/265/297';
 const file = fs.createWriteStream("page_source.html");
@@ -12,6 +12,6 @@ https.get(url, function (response) {
         });
     });
 }).on('error', function (err) {
-    fs.unlink("page_source.html");
+    fs.unlink("page_source.html", () => { });
     console.error("Error downloading:", err.message);
 });
