@@ -1,10 +1,22 @@
 {
-    "version": 2,
-    "public": true,
-    "rewrites": [
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/index.html"
+            "src": "/index.js",
+            "dest": "/script.js"
+        },
+        {
+            "src": "/style.css",
+            "dest": "/style.css"
+        },
+        {
+            "src": "/menu-data.json",
+            "dest": "/menu-data.json"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }

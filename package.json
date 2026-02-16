@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "scrape": "node scraper.js",
-    "build": "echo 'Static build' ",
+    "build": "mkdir -p .vercel/output/static && cp -r * .vercel/output/static || true",
     "dev": "node server.js",
     "start": "node server.js",
     "setup-cron": "bash setup-cron.sh",
