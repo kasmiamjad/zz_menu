@@ -77,7 +77,7 @@ async function scrapeMenu() {
     } catch {
       price = '';
     }
-0.2
+    0.2
     // Get description (strip HTML tags)
     const description = stripHtml(product.product_description || '');
 
@@ -88,7 +88,7 @@ async function scrapeMenu() {
       description,
       image: product.image_url || ''
     };
-0.2
+    0.2
     if (categoryMap.has(catId)) {
       categoryMap.get(catId).dishes.push(dish);
     } else {

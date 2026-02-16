@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant </title>
+    <title>Z&Z | Premium Digital Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Italiana&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="hero">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop" alt="Food" class="hero-image">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop" alt="Food"
+            class="hero-image">
         <button class="user-icon">👤</button>
     </div>
-    
+
     <div class="logo-section">
         <div class="restaurant-logo">
             <span id="restaurant-logo-text">Z&Z</span>
         </div>
     </div>
-    
+
     <div class="restaurant-info">
         <h1 id="restaurant-name">Loading...</h1>
         <div class="social-icons">
@@ -27,7 +34,7 @@
             <span>📞</span>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="tabs-container">
             <div class="tabs" id="category-tabs">
@@ -37,21 +44,21 @@
                 </button>
             </div>
         </div>
-        
+
         <div class="view-toggle">
             <button class="toggle-btn active" data-view="list">☰</button>
             <button class="toggle-btn" data-view="grid">▦</button>
         </div>
-        
+
         <div class="search-bar">
             <input type="text" id="search-input" placeholder="🔍 Search for dishes...">
         </div>
-        
+
         <main id="menu-container">
             <div class="loading">Loading menu...</div>
         </main>
     </div>
-    
+
     <!-- Dish Detail Modal -->
     <div class="dish-modal" id="dish-modal">
         <div class="modal-content">
@@ -69,7 +76,12 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="checkout-bar">
+        <button class="checkout-btn">Checkout order</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
