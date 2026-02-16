@@ -110,8 +110,8 @@ async function scrapeMenu() {
   });
 
   // 5. Save to JSON
-  await fs.writeFile('menu-data.json', JSON.stringify(menuData, null, 2));
-  console.log('\n✓ Data saved to menu-data.json');
+  await fs.writeFile('public/menu-data.json', JSON.stringify(menuData, null, 2));
+  console.log('\n✓ Data saved to public/menu-data.json');
 
   return menuData;
 }

@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "scrape": "node scraper.js",
-    "build": "echo 'Skipping scraper on build'",
     "dev": "node server.js",
     "start-local": "node server.js",
     "setup-cron": "bash setup-cron.sh",
