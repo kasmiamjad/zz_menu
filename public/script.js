@@ -6,7 +6,7 @@ let currentCategory = 'all';
 const categoryIcons = {
     'all': '✨',
     'main-dish': '🍽️',
-    'salad': '🥗',
+    'salad': '<img src="image/salad.jpg" alt="Salad">',
     'soups-&-starters': '🥣',
     'charcoal-barbeque': '🔥',
     'mughlai-curries': '🥘',
@@ -25,9 +25,6 @@ async function loadMenu() {
     try {
         const response = await fetch('menu-data.json');
         menuData = await response.json();
-
-        // Set restaurant name
-        document.getElementById('restaurant-name').textContent = menuData.restaurantName || 'Restaurant Menu';
 
         if (!menuData.categories || menuData.categories.length === 0) {
             document.getElementById('menu-container').innerHTML = '<div class="loading">No menu data available</div>';
@@ -62,10 +59,12 @@ function buildTabs() {
 
     menuData.categories.forEach(category => {
         const categorySlug = category.categoryName.toLowerCase().replace(/\s+/g, '-');
-        const icon = categoryIcons[categorySlug] || '🍽️';
+        const iconContent = categoryIcons[categorySlug] || '🍽️';
+        const isImage = iconContent.includes('<img');
+
         tabsHTML += `
             <button class="tab" data-category="${categorySlug}">
-                <div class="tab-icon">${icon}</div>
+                <div class="tab-icon ${isImage ? 'has-image' : ''}">${iconContent}</div>
                 <span>${category.categoryName}</span>
             </button>
         `;
@@ -194,6 +193,7 @@ function displayMenu(categoryFilter = 'all', searchQuery = '') {
 
 function renderDishItem(dish, categoryName) {
     const hasImage = dish.image && dish.image.startsWith('http');
+    const priceDisplay = dish.price ? dish.price.split('/')[0].trim() : '-';
 
     return `
         <div class="dish-item" onclick="openDishModal('${dish.name.replace(/'/g, "\\'")}', '${categoryName}', '${dish.price}', '${dish.description || ''}', '${dish.image}')">
@@ -205,11 +205,11 @@ function renderDishItem(dish, categoryName) {
         }
             </div>
             <div class="dish-details">
+                <div class="dish-category">${categoryName}</div>
                 <h3 class="dish-name">${dish.name}</h3>
-                <div class="dish-price">${dish.price ? dish.price.split('/')[0].trim() : '-'}</div>
+                <div class="dish-price">${priceDisplay}</div>
                 ${dish.description ? `<p class="dish-description">${dish.description}</p>` : ''}
             </div>
-            <div class="dish-add">+</div>
         </div>
     `;
 }
@@ -225,7 +225,10 @@ function openDishModal(name, category, price, description, image) {
     modalName.textContent = name;
     modalPriceBadge.textContent = `${category}`;
     modalDescription.textContent = description || 'Delicious dish from our menu';
-    modalPrice.textContent = price || '-';
+
+    // Format price: Extract numeric part and add ﷼
+    const numericPrice = price ? price.replace(/[^0-9.]/g, '') : '0.00';
+    modalPrice.innerHTML = `<span>${numericPrice}</span> <span style="font-size: 0.9em; margin-top: 4px;">﷼</span>`;
 
     if (image && image.startsWith('http')) {
         modalImage.src = image;
