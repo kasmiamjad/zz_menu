@@ -193,7 +193,10 @@ function displayMenu(categoryFilter = 'all', searchQuery = '') {
 
 function renderDishItem(dish, categoryName) {
     const hasImage = dish.image && dish.image.startsWith('http');
-    const priceDisplay = dish.price ? dish.price.split('/')[0].trim() : '-';
+    const rawPrice = dish.price ? dish.price.split('/')[0].trim() : '-';
+    const priceNumber = rawPrice.replace('SAR', '').trim();
+    const sarSymbol = `<span class="sar-symbol"></span>`;
+    const priceDisplay = dish.price ? `${sarSymbol}${priceNumber}` : '-';
 
     return `
         <div class="dish-item" onclick="openDishModal('${dish.name.replace(/'/g, "\\'")}', '${categoryName}', '${dish.price}', '${dish.description || ''}', '${dish.image}')">
@@ -226,9 +229,9 @@ function openDishModal(name, category, price, description, image) {
     modalPriceBadge.textContent = `${category}`;
     modalDescription.textContent = description || 'Delicious dish from our menu';
 
-    // Format price: Extract numeric part and add ﷼
-    const numericPrice = price ? price.replace(/[^0-9.]/g, '') : '0.00';
-    modalPrice.innerHTML = `<span>${numericPrice}</span> <span style="font-size: 0.9em; margin-top: 4px;">﷼</span>`;
+    // Format price: Extract numeric part (split on '/' to exclude quantity)
+    const numericPrice = price ? price.split('/')[0].replace(/[^0-9.]/g, '').trim() : '0.00';
+    modalPrice.innerHTML = `<span class="modal-sar-symbol"></span><span>${numericPrice}</span>`;
 
     if (image && image.startsWith('http')) {
         modalImage.src = image;

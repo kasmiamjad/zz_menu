@@ -166,7 +166,7 @@ body {
     height: 65px;
     background: #fff;
     border: 1px solid #eee;
-    border-radius: 50%;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,7 +181,7 @@ body {
     /* Slightly larger to cover any sub-pixel gaps */
     height: 101%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 16px;
 }
 
 .tab-icon.has-image {
@@ -342,14 +342,14 @@ main {
 .dish-image-container {
     width: 100%;
     aspect-ratio: 1;
-    border-radius: 50%;
+    border-radius: 0;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     background: #000;
-    border: 4px solid var(--glass-border);
 }
 
 .dish-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -421,6 +421,21 @@ main {
     font-size: 1.1rem;
     font-weight: 800;
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.sar-symbol {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: var(--gold-gradient);
+    -webkit-mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
+    mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    flex-shrink: 0;
 }
 
 .dish-description {
@@ -594,22 +609,31 @@ main {
 }
 
 .modal-dish-price {
-    background: #ffffff;
-    padding: 12px 35px;
-    border-radius: 40px;
-    font-size: 1.4rem;
-    font-weight: 700;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    gap: 6px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 
-.modal-dish-price span {
+.modal-dish-price span:not(.modal-sar-symbol) {
     background: var(--gold-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.modal-sar-symbol {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: var(--gold-gradient);
+    -webkit-mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
+    mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    flex-shrink: 0;
 }
 
 .modal-nav {
