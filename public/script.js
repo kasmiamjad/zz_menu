@@ -4,20 +4,7 @@ let currentCategory = 'all';
 // Category icons mapping
 // Category icons mapping - Premium selection
 const categoryIcons = {
-    'all': '✨',
-    'main-dish': '🍽️',
-    'salad': '<img src="image/salad.jpg" alt="Salad">',
-    'soups-&-starters': '🥣',
-    'charcoal-barbeque': '🔥',
-    'mughlai-curries': '🥘',
-    'beef-nihari': '🍖',
-    'tawa-specialities': '🍳',
-    'vegetables-&-lentils': '🍃',
-    'rice': '🍚',
-    'tandoor': '🫓',
-    'dessert': '🍰',
-    'cold-beverages': '🍹',
-    'hot-beverages': '☕',
+    'all': '<img src="image/ZZ_golden.png" alt="All" style="object-fit: contain; padding: 10px; background: #fff;">',
     'close': '✕'
 };
 
@@ -50,17 +37,29 @@ async function loadMenu() {
 function buildTabs() {
     const tabsContainer = document.getElementById('category-tabs');
 
+    const allIconContent = categoryIcons['all'] || '🍽️';
+    const allIsImage = allIconContent.includes('<img');
+
     let tabsHTML = `
         <button class="tab active" data-category="all">
-            <div class="tab-icon">${categoryIcons['all']}</div>
+            <div class="tab-icon ${allIsImage ? 'has-image' : ''}">${allIconContent}</div>
             <span>All Items</span>
         </button>
     `;
 
     menuData.categories.forEach(category => {
         const categorySlug = category.categoryName.toLowerCase().replace(/\s+/g, '-');
-        const iconContent = categoryIcons[categorySlug] || '🍽️';
-        const isImage = iconContent.includes('<img');
+        let iconContent = categoryIcons[categorySlug];
+        let isImage = false;
+
+        if (iconContent) {
+            isImage = iconContent.includes('<img');
+        } else if (category.dishes && category.dishes.length > 0 && category.dishes[0].image && category.dishes[0].image.startsWith('http')) {
+            iconContent = `<img src="${category.dishes[0].image}" alt="${category.categoryName}">`;
+            isImage = true;
+        } else {
+            iconContent = '🍽️';
+        }
 
         tabsHTML += `
             <button class="tab" data-category="${categorySlug}">
@@ -81,6 +80,38 @@ function buildTabs() {
             currentCategory = category;
             displayMenu(category);
         });
+    });
+
+    // Drag to scroll functionality
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    tabsContainer.style.cursor = 'grab';
+
+    tabsContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        tabsContainer.style.cursor = 'grabbing';
+        startX = e.pageX - tabsContainer.offsetLeft;
+        scrollLeft = tabsContainer.scrollLeft;
+    });
+
+    tabsContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        tabsContainer.style.cursor = 'grab';
+    });
+
+    tabsContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        tabsContainer.style.cursor = 'grab';
+    });
+
+    tabsContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault(); // Prevent text selection
+        const x = e.pageX - tabsContainer.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed multiplier
+        tabsContainer.scrollLeft = scrollLeft - walk;
     });
 }
 
