@@ -1,6 +1,15 @@
 let menuData = null;
 let currentCategory = 'all';
 
+document.addEventListener("DOMContentLoaded", () => {
+    const bannerImages = ['bg.jpeg', 'bg2.JPG', 'bg3.JPG', 'bg4.JPG'];
+    const randomImg = bannerImages[Math.floor(Math.random() * bannerImages.length)];
+    const heroImage = document.querySelector('.hero-image');
+    if (heroImage) {
+        heroImage.src = `image/${randomImg}`;
+    }
+});
+
 // Category icons mapping
 // Category icons mapping - Premium selection
 const categoryIcons = {
@@ -17,6 +26,11 @@ async function loadMenu() {
             document.getElementById('menu-container').innerHTML = '<div class="loading">No menu data available</div>';
             return;
         }
+
+        // Filter out "N/A" and "Main Dish" categories so their dishes don't show up in tabs or "All" view
+        menuData.categories = menuData.categories.filter(category => 
+            category.categoryName !== 'N/A' && category.categoryName !== 'Main Dish'
+        );
 
         // Build category tabs
         buildTabs();
@@ -262,7 +276,7 @@ function openDishModal(name, category, price, description, image) {
 
     // Format price: Extract numeric part (split on '/' to exclude quantity)
     const numericPrice = price ? price.split('/')[0].replace(/[^0-9.]/g, '').trim() : '0.00';
-    modalPrice.innerHTML = `<span class="modal-sar-symbol"></span><span>${numericPrice}</span>`;
+    modalPrice.innerHTML = `<span class="modal-sar-symbol"></span>${numericPrice}`;
 
     if (image && image.startsWith('http')) {
         modalImage.src = image;

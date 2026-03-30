@@ -7,7 +7,7 @@
 :root {
     --primary: #ffffff;
     --accent: #ff7b2b;
-    --bg-dark: #121212;
+    --bg-dark: #000000;
     --card-bg: #1e1e1e;
     --text-main: #ffffff;
     --text-muted: #a0a0a0;
@@ -15,6 +15,7 @@
     --glass-border: rgba(255, 255, 255, 0.1);
     --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.5);
     --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    --price-gradient: linear-gradient(135deg, #d4ad7a, #EED0AA, #F4C88B);
 }
 
 body {
@@ -112,7 +113,7 @@ body {
     margin: -40px 15px 25px;
     border-radius: 24px;
     position: sticky;
-    top: 15px;
+    top: 0;
     z-index: 100;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -124,12 +125,23 @@ body {
     padding: 10px 20px;
     /* Added top/bottom padding to allow glow overflow */
     overflow-x: auto;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(191, 149, 63, 0.5) transparent;
     -webkit-overflow-scrolling: touch;
 }
 
 .tabs::-webkit-scrollbar {
-    display: none;
+    height: 4px;
+}
+
+.tabs::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 0 20px;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+    background: rgba(191, 149, 63, 0.5);
+    border-radius: 4px;
 }
 
 .tab {
@@ -195,14 +207,14 @@ body {
 }
 
 .tab.active .tab-icon {
-    border: 2px solid #bf953f;
-    box-shadow: 0 4px 12px rgba(191, 149, 63, 0.3);
+    border: 2px solid #d1a163;
+    box-shadow: 0 4px 12px rgba(209, 161, 99, 0.3);
 }
 
 .tab.active span {
-    color: #bf953f;
+    color: #d1a163;
     font-weight: 700;
-    border-bottom: 2px solid #bf953f;
+    border-bottom: 2px solid #d1a163;
     padding-bottom: 4px;
 }
 
@@ -289,14 +301,14 @@ main {
     font-family: 'Italiana', serif;
     font-size: 2rem;
     font-weight: 400;
-    background: var(--gold-gradient);
+    background: var(--price-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .category-count {
-    background: var(--gold-gradient);
+    background: var(--price-gradient);
     color: #000;
     padding: 4px 12px;
     border-radius: 20px;
@@ -348,7 +360,7 @@ main {
     left: 0;
     width: 100%;
     height: 60%;
-    background: linear-gradient(to top, var(--card-bg) 0%, transparent 100%);
+    background: linear-gradient(to top, #000000 0%, transparent 100%);
     z-index: 1;
 }
 
@@ -393,7 +405,7 @@ main {
 .dish-details {
     padding: 20px;
     padding-top: 5px;
-    background: var(--card-bg);
+    background: #000000;
     flex-grow: 1;
     z-index: 2;
     position: relative;
@@ -402,10 +414,7 @@ main {
 .dish-name {
     font-size: 1.1rem;
     font-weight: 600;
-    background: var(--gold-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #d1a163;
     margin-bottom: 4px;
     line-height: 1.2;
     display: -webkit-box;
@@ -424,7 +433,7 @@ main {
 }
 
 .dish-price {
-    background: var(--gold-gradient);
+    background: var(--price-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -440,7 +449,7 @@ main {
     display: inline-block;
     width: 1em;
     height: 1em;
-    background: var(--gold-gradient);
+    background: var(--price-gradient);
     -webkit-mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
     mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
     -webkit-mask-size: contain;
@@ -517,6 +526,7 @@ main {
     max-width: 500px;
     min-height: auto;
     border-radius: 40px;
+    border: 2.5px solid #d1a163;
     position: relative;
     overflow: hidden;
     margin: 20px;
@@ -586,24 +596,21 @@ main {
     font-family: 'Italiana', serif;
     font-size: 2.5rem;
     font-weight: 400;
-    color: #ffffff;
+    color: #d1a163;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
 .modal-price-badge {
     display: inline-block;
-    background: var(--gold-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-muted);
     font-weight: 700;
     font-size: 0.85rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 25px;
     padding-bottom: 4px;
-    border-bottom: 2px solid #bf953f;
+    border-bottom: 2px solid var(--text-muted);
 }
 
 .modal-dish-description {
@@ -620,10 +627,7 @@ main {
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 10px;
-}
-
-.modal-dish-price span:not(.modal-sar-symbol) {
-    background: var(--gold-gradient);
+    background: var(--price-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -633,7 +637,7 @@ main {
     display: inline-block;
     width: 1.3em;
     height: 1.3em;
-    background: var(--gold-gradient);
+    background: var(--price-gradient);
     -webkit-mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
     mask: url('image/Saudi_Riyal_Symbol.svg.png') no-repeat center;
     -webkit-mask-size: contain;
@@ -644,4 +648,8 @@ main {
 .modal-nav {
     display: none;
     /* Simplify for now or redesign later */
+}
+
+.dish-favorite {
+    display: none !important;
 }
