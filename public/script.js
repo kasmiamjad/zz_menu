@@ -13,7 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
 // Category icons mapping
 // Category icons mapping - Premium selection
 const categoryIcons = {
-    'all': '<img src="image/ZZ_golden.png" alt="All" style="object-fit: contain; padding: 10px; background: #fff;">',
+    'all': '<img src="image/ZZ_all_items.png" alt="All" style="object-fit: contain;">',
+    'salad': '<img src="https://hub.saaed.app/uploads/img/1771078289_4-kachumer-salad.jpg" alt="Salad">',
+    'soups-&-starters': '<img src="https://hub.saaed.app/uploads/img/1771083247_17-seafood-thermidor-soup.jpg" alt="Soups & Starters">',
+    'charcoal-barbeque': '<img src="https://hub.saaed.app/uploads/img/1771075955_30-chicken-tikka.jpg" alt="Charcoal Barbeque">',
+    'mughlai-curries': '<img src="https://hub.saaed.app/uploads/img/1771083567_57-chikcen-tikka-masala.jpg" alt="Mughlai Curries">',
+    'beef-nihari': '<img src="https://hub.saaed.app/uploads/img/1771080197_88-zz-special-nihari.jpg" alt="Beef Nihari">',
+    'tawa-specialities': '<img src="https://hub.saaed.app/uploads/img/1771075173_82-champ-masala.jpg" alt="Tawa Specialities">',
+    'vegetables-&-lentils': '<img src="https://hub.saaed.app/uploads/img/1771082866_94-qasar-e-pukhtan.jpg" alt="Vegetables & Lentils">',
+    'rice': '<img src="https://hub.saaed.app/uploads/img/1771078431_98-karachi-special-biryani.jpg" alt="Rice">',
+    'tandoor': '<img src="https://hub.saaed.app/uploads/img/1771082746_107-plain-naan.jpg" alt="Tandoor">',
+    'dessert': '<img src="https://hub.saaed.app/uploads/img/1771083029_116-rasmalai.jpg" alt="Dessert">',
+    'cold-beverages': '<img src="https://hub.saaed.app/uploads/img/1771077356_134-fresh-orange-juice.jpg" alt="Cold Beverages">',
+    'hot-beverages': '<img src="https://hub.saaed.app/uploads/img/1771078461_137-karak-chai.jpg" alt="Hot Beverages">',
+    'mocktails': '<img src="https://hub.saaed.app/uploads/img/1771081018_148-strawbarry-mojito.jpg" alt="Mocktails">',
+    'smoothies-&-shakes': '<img src="https://hub.saaed.app/uploads/img/1771078945_152-lotus-creamy-shakes.jpg" alt="Smoothies & Shakes">',
+    'cold-coffee': '<img src="https://hub.saaed.app/uploads/img/1771077867_159-hazelnut-macchiato.jpg" alt="Cold Coffee">',
+    'hot-coffee': '<img src="https://hub.saaed.app/uploads/img/1771077153_165-flat-white.jpg" alt="Hot Coffee">',
     'close': '✕'
 };
 

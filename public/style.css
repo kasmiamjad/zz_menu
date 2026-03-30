@@ -15,7 +15,7 @@
     --glass-border: rgba(255, 255, 255, 0.1);
     --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.5);
     --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
-    --price-gradient: linear-gradient(135deg, #d4ad7a, #EED0AA, #F4C88B);
+    --price-gradient: linear-gradient(135deg, #d4ad7a, #e5b77a, #fcd196);
 }
 
 body {
@@ -412,6 +412,7 @@ main {
 }
 
 .dish-name {
+    font-family: 'Italiana', serif;
     font-size: 1.1rem;
     font-weight: 600;
     color: #d1a163;
@@ -437,7 +438,7 @@ main {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 800;
     margin-bottom: 8px;
     display: flex;
