@@ -23,7 +23,7 @@ const categoryIcons = {
     'vegetables-&-lentils': '<img src="https://hub.saaed.app/uploads/img/1771082866_94-qasar-e-pukhtan.jpg" alt="Vegetables & Lentils">',
     'rice': '<img src="https://hub.saaed.app/uploads/img/1771078431_98-karachi-special-biryani.jpg" alt="Rice">',
     'tandoor': '<img src="https://hub.saaed.app/uploads/img/1771082746_107-plain-naan.jpg" alt="Tandoor">',
-    'dessert': '<img src="https://hub.saaed.app/uploads/img/1771083029_116-rasmalai.jpg" alt="Dessert">',
+    'dessert': '<img src="https://hub.saaed.app/uploads/img/1771078798_117-lab-e-shireen.jpg" alt="Dessert">',
     'cold-beverages': '<img src="https://hub.saaed.app/uploads/img/1771077356_134-fresh-orange-juice.jpg" alt="Cold Beverages">',
     'hot-beverages': '<img src="https://hub.saaed.app/uploads/img/1771078461_137-karak-chai.jpg" alt="Hot Beverages">',
     'mocktails': '<img src="https://hub.saaed.app/uploads/img/1771081018_148-strawbarry-mojito.jpg" alt="Mocktails">',
