@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z&Z | Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Italiana&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ffffff;
+            --accent: #ff7b2b;
+            --bg-dark: #000000;
+            --card-bg: #1e1e1e;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            --price-gradient: linear-gradient(135deg, #d4ad7a, #e5b77a, #fcd196);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .admin-card {
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 30px;
+            border: 2px solid #d1a163;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Italiana', serif;
+            font-size: 2rem;
+            color: #d1a163;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .scrape-btn {
+            background: var(--gold-gradient);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            color: #000;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(209, 161, 99, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+        }
+
+        .scrape-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(209, 161, 99, 0.6);
+        }
+
+        .scrape-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            min-height: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .status.loading {
+            color: #d1a163;
+        }
+
+        .status.success {
+            color: #4caf50;
+        }
+
+        .status.error {
+            color: #f44336;
+        }
+
+        .loader {
+            display: none;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(209, 161, 99, 0.3);
+            border-radius: 50%;
+            border-top-color: #d1a163;
+            animation: spin 1s ease-in-out infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading .loader {
+            display: block;
+        }
+        
+        .back-link {
+            margin-top: 30px;
+            display: block;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover {
+            color: #d1a163;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="admin-card" id="admin-card">
+        <img src="image/ZZ_golden.png" alt="Z&Z Logo" class="logo">
+        <h1>Menu Scraper</h1>
+        <p>Update your digital menu with the latest data from the hub. This process may take a few seconds.</p>
+
+        <button id="scrape-btn" class="scrape-btn">Update Menu Data</button>
+
+        <div class="loader" id="loader"></div>
+        <div id="status" class="status"></div>
+        
+        <a href="/" class="back-link">← Back to Menu</a>
+    </div>
+
+    <script>
+        const scrapeBtn = document.getElementById('scrape-btn');
+        const statusDiv = document.getElementById('status');
+        const loader = document.getElementById('loader');
+        const card = document.getElementById('admin-card');
+
+        scrapeBtn.addEventListener('click', async () => {
+            // UI State: Loading
+            scrapeBtn.disabled = true;
+            statusDiv.textContent = 'Fetching data...';
+            statusDiv.className = 'status loading';
+            loader.style.display = 'block';
+
+            try {
+                const response = await fetch('/api/scrape', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const contentType = response.headers.get("content-type");
+                if (contentType && contentType.indexOf("application/json") !== -1) {
+                    const result = await response.json();
+                    if (result.success) {
+                        statusDiv.textContent = `✓ ${result.message} (${result.categories} categories updated)`;
+                        statusDiv.className = 'status success';
+                    } else {
+                        throw new Error(result.message || 'Scraping failed');
+                    }
+                } else {
+                    // Not JSON - likely an error page or static server issue
+                    const text = await response.text();
+                    console.error('Non-JSON response:', text);
+                    if (response.status === 404) {
+                        throw new Error('API endpoint not found (404). Please restart your Node.js server.');
+                    } else {
+                        throw new Error(`Server returned non-JSON response (Status ${response.status})`);
+                    }
+                }
+            } catch (error) {
+                statusDiv.textContent = `✕ ${error.message}`;
+                statusDiv.className = 'status error';
+            } finally {
+                scrapeBtn.disabled = false;
+                loader.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

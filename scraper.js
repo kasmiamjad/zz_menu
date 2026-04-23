@@ -31,7 +31,7 @@ async function fetchJson(url) {
   return res.json();
 }
 
-async function scrapeMenu() {
+export async function scrapeMenu() {
   console.log('Fetching menu data from API...');
 
   // 1. Fetch categories
@@ -116,4 +116,4 @@ async function scrapeMenu() {
   return menuData;
 }
 
-scrapeMenu().catch(console.error);
+

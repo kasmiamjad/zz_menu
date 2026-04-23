@@ -145,6 +145,13 @@ function buildTabs() {
     });
 }
 
+function escapeHtmlStr(str) {
+    if (!str) return '';
+    // Escape single quotes for use in onclick='...' attributes
+    // Also escape double quotes just in case, though we use single quotes for arguments
+    return str.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+}
+
 function displayMenu(categoryFilter = 'all', searchQuery = '') {
     const menuContainer = document.getElementById('menu-container');
 
@@ -260,7 +267,7 @@ function renderDishItem(dish, categoryName) {
     const priceDisplay = dish.price ? `${sarSymbol}${priceNumber}` : '-';
 
     return `
-        <div class="dish-item" onclick="openDishModal('${dish.name.replace(/'/g, "\\'")}', '${categoryName}', '${dish.price}', '${dish.description || ''}', '${dish.image}')">
+        <div class="dish-item" onclick="openDishModal('${escapeHtmlStr(dish.name)}', '${escapeHtmlStr(categoryName)}', '${escapeHtmlStr(dish.price)}', '${escapeHtmlStr(dish.description)}', '${escapeHtmlStr(dish.image)}')">
             <span class="dish-favorite">♡</span>
             <div class="dish-image-container">
                 ${hasImage

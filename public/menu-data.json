@@ -3,7 +3,36 @@
   "categories": [
     {
       "categoryName": "Main Dish",
-      "dishes": []
+      "dishes": [
+        {
+          "name": "Eid Buffet",
+          "category": "Main Dish",
+          "price": "SAR 99.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Eid Kid Buffet",
+          "category": "Main Dish",
+          "price": "SAR 55.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Premium Eid Combo",
+          "category": "Main Dish",
+          "price": "SAR 165.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
+        },
+        {
+          "name": "Regular Eid Combo",
+          "category": "Main Dish",
+          "price": "SAR 115.00 / حبة",
+          "description": "",
+          "image": "https://hub.saaed.app/img/default.png"
+        }
+      ]
     },
     {
       "categoryName": "Salad",
@@ -873,13 +902,6 @@
           "image": "https://hub.saaed.app/uploads/img/1771078798_117-lab-e-shireen.jpg"
         },
         {
-          "name": "Delicious Pakistani Falooda",
-          "category": "Dessert",
-          "price": "SAR 20.00 / 1",
-          "description": "Cheese patties soaked in milk syrup, almonds & nuts",
-          "image": "https://hub.saaed.app/uploads/img/1771076708_118-delicious-pakistani-falooda.jpg"
-        },
-        {
           "name": "Pistachio Rabri",
           "category": "Dessert",
           "price": "SAR 22.00 / 1",
@@ -913,7 +935,7 @@
           "image": "https://hub.saaed.app/uploads/img/1771080529_122-water.jpg"
         },
         {
-          "name": "Soft Drinks (Regular & Diet)",
+          "name": "Soft Drinks (Regular)",
           "category": "Cold Beverages",
           "price": "SAR 5.00 / 1",
           "description": "Drinking Water (Small)",
@@ -941,10 +963,10 @@
           "image": "https://hub.saaed.app/uploads/img/1771081130_126-sparkling-water.jpg"
         },
         {
-          "name": "Lassi (Sweet & Salty)",
+          "name": "Lassi (Sweet)",
           "category": "Cold Beverages",
           "price": "SAR 12.00 / 1",
-          "description": "Sparkling Water",
+          "description": "",
           "image": "https://hub.saaed.app/uploads/img/1771078878_127-lassi.jpg"
         },
         {
@@ -995,6 +1017,20 @@
           "price": "SAR 18.00 / 1",
           "description": "Virgin Mojitos (Assorted Flavors)",
           "image": "https://hub.saaed.app/uploads/img/1771077356_134-fresh-orange-juice.jpg"
+        },
+        {
+          "name": "Lassi (Salty)",
+          "category": "Cold Beverages",
+          "price": "SAR 12.00 / 1",
+          "description": "",
+          "image": "https://hub.saaed.app/uploads/img/1772336623_1771078878-127-lassi.jpg"
+        },
+        {
+          "name": "Soft Drinks(Diet)",
+          "category": "Cold Beverages",
+          "price": "SAR 5.00 / 1",
+          "description": "Drinking Water (Small)",
+          "image": "https://hub.saaed.app/img/default.png"
         }
       ]
     },
@@ -1116,6 +1152,13 @@
     {
       "categoryName": "Smoothies & Shakes",
       "dishes": [
+        {
+          "name": "Delicious Pakistani Falooda",
+          "category": "Smoothies & Shakes",
+          "price": "SAR 20.00 / 1",
+          "description": "Cheese patties soaked in milk syrup, almonds & nuts",
+          "image": "https://hub.saaed.app/uploads/img/1771076708_118-delicious-pakistani-falooda.jpg"
+        },
         {
           "name": "Mix Berries Smoothie",
           "category": "Smoothies & Shakes",
@@ -1276,33 +1319,20 @@
       ]
     },
     {
+      "categoryName": "Ramadan - Iftar",
+      "dishes": []
+    },
+    {
+      "categoryName": "Ramadan - Suhoor",
+      "dishes": []
+    },
+    {
       "categoryName": "N/A",
       "dishes": [
         {
-          "name": "Buffet Deal",
+          "name": "Buffet 100",
           "category": "N/A",
-          "price": "SAR 70.00 / حبة",
-          "description": "",
-          "image": "https://hub.saaed.app/img/default.png"
-        },
-        {
-          "name": "Kid Buffet",
-          "category": "N/A",
-          "price": "SAR 35.00 / حبة",
-          "description": "",
-          "image": "https://hub.saaed.app/img/default.png"
-        },
-        {
-          "name": "Ramadan Buffet",
-          "category": "N/A",
-          "price": "SAR 95.00 / حبة",
-          "description": "",
-          "image": "https://hub.saaed.app/img/default.png"
-        },
-        {
-          "name": "Ramadan Kid Buffet",
-          "category": "N/A",
-          "price": "SAR 45.00 / حبة",
+          "price": "SAR 100.00 / حبة",
           "description": "",
           "image": "https://hub.saaed.app/img/default.png"
         }
