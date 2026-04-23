@@ -43,9 +43,12 @@ async function loadMenu() {
             return;
         }
 
-        // Filter out "N/A" and "Main Dish" categories so their dishes don't show up in tabs or "All" view
+        // Filter out specific categories so their dishes don't show up in tabs or "All" view
         menuData.categories = menuData.categories.filter(category => 
-            category.categoryName !== 'N/A' && category.categoryName !== 'Main Dish'
+            category.categoryName !== 'N/A' && 
+            category.categoryName !== 'Main Dish' &&
+            category.categoryName !== 'Ramadan - Iftar' &&
+            category.categoryName !== 'Ramadan - Suhoor'
         );
 
         // Build category tabs
