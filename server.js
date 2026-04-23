@@ -12,11 +12,24 @@ const PORT = 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
+// In-memory cache for Vercel support
+let cachedMenu = null;
+
+// Endpoint to get menu data
+app.get('/api/menu-data', (req, res) => {
+    if (cachedMenu) {
+        return res.json(cachedMenu);
+    }
+    // Fallback to reading the physical file (useful for first load or local dev)
+    res.sendFile(path.join(__dirname, 'public/menu-data.json'));
+});
+
 // Endpoint to trigger scraping
 app.post('/api/scrape', async (req, res) => {
     try {
         console.log('Scrape requested via API');
         const data = await scrapeMenu();
+        cachedMenu = data; // Store in memory
         res.json({ success: true, message: 'Menu updated successfully', categories: data.categories.length });
     } catch (error) {
         console.error('Scrape error:', error);

@@ -35,7 +35,7 @@ const categoryIcons = {
 
 async function loadMenu() {
     try {
-        const response = await fetch('menu-data.json');
+        const response = await fetch('/api/menu-data');
         menuData = await response.json();
 
         if (!menuData.categories || menuData.categories.length === 0) {

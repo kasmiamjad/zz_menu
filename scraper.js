@@ -109,9 +109,13 @@ export async function scrapeMenu() {
     console.log(`  - ${cat.categoryName}: ${cat.dishes.length} dishes`);
   });
 
-  // 5. Save to JSON
-  await fs.writeFile('public/menu-data.json', JSON.stringify(menuData, null, 2));
-  console.log('\n✓ Data saved to public/menu-data.json');
+  // 5. Save to JSON (Try-catch for read-only systems like Vercel)
+  try {
+    await fs.writeFile('public/menu-data.json', JSON.stringify(menuData, null, 2));
+    console.log('\n✓ Data saved to public/menu-data.json');
+  } catch (error) {
+    console.warn('\n⚠️ Could not save to filesystem (this is expected on Vercel):', error.message);
+  }
 
   return menuData;
 }
