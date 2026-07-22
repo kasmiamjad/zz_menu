@@ -433,6 +433,31 @@ main {
     letter-spacing: 1px;
 }
 
+.dish-name-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.dish-name-row .dish-name {
+    flex: 1;
+    min-width: 0;
+}
+
+.spicy-badge {
+    flex-shrink: 0;
+    color: #d1a163;
+    display: inline-flex;
+    align-items: center;
+}
+
+.spicy-badge svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+}
+
 .dish-price {
     background: var(--price-gradient);
     background-clip: text;
@@ -591,6 +616,27 @@ main {
     padding: 30px;
     text-align: left;
     background: #111111;
+}
+
+.modal-name-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-name-row .modal-dish-name {
+    flex: 1;
+    min-width: 0;
+}
+
+.modal-name-row .spicy-badge {
+    margin-top: 8px;
+}
+
+.modal-name-row .spicy-badge svg {
+    width: 2rem;
+    height: 2rem;
 }
 
 .modal-dish-name {
